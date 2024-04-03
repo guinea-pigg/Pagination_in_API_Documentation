@@ -31,5 +31,3 @@ Keyset-based pagination offers predictable performance and is well-suited for la
 Page-based pagination is perhaps the most user-friendly pagination style. Instead of dealing with offsets or cursors directly, users specify the page number and the number of items per page. For instance, requesting page 2 with 10 items per page would retrieve items 11-20.
 
 While page-based pagination is intuitive for users, it may not be as efficient for large datasets, as it doesn't provide mechanisms for efficiently navigating to arbitrary points in the dataset.
-
-In summary, each pagination style has its advantages and drawbacks, and the choice of pagination style depends on factors such as the size and nature of the dataset, as well as the performance requirements of the API. By understanding these pagination styles and patterns, you can design APIs that provide efficient and seamless data retrieval experiences for users.
