@@ -14,9 +14,9 @@ To understand the concept of API pagination, let's begin with a short overview w
 <table>
 <tbody>
 <td align="center">
-<img width="1500" height="0"><br>
+<img width="1000" height="0"><br>
 <h3>An API is a set of tools or functions that allow different software systems to communicate and interact with each other.</h3><br>
-<img width="1500" height="0">
+<img width="1000" height="0">
 </td>
 </tbody>
 </table>
