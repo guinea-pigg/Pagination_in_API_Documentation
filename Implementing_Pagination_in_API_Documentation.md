@@ -28,3 +28,11 @@ When designing API endpoints for pagination, it's essential to consider the foll
 `GET /users?page=1&limit=10`
 
 This request would retrieve the first page of users with a limit of 10 users per page.
+
+**Pagination Examples in Common Programming Languages:**
+
+Pagination can be implemented in API documentation in several ways: 
+- Python (using requests library)
+- JavaScript (using fetch API)
+- Java (using HttpURLConnection)
+
