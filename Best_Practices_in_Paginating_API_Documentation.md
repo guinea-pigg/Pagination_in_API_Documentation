@@ -15,7 +15,7 @@ While implementing pagination in API documents, it is worth remembering about th
 
 Selecting the appropriate pagination style depends on various factors such as the nature of the dataset, performance requirements, and user experience. 
 
-The base is to evaluate specific requirements in the documentation and choose the pagination style that best fits the use case. To know more about each pagination style, go to the chapter [Pagination Styles and Patterns](Pagination_Styles_and_Patterns.md).
+The base is to evaluate specific requirements in the documentation and choose the pagination style that best fits the use case. To know more about each pagination style, go to the chapter [Pagination Styles and Patterns](Pagination_Styles_and_Patterns).
 
 
 ## Handling Large Datasets Efficiently:
