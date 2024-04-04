@@ -6,8 +6,6 @@ nav_order: 2
 
 # Pagination in API Documentation. Introduction
 
-# 1. Pagination in API Documentation. Introduction
-
 ## Short explanation on API documentation
 
 To understand the concept of API pagination, let's begin with a short overview what API and API documentation are. 
