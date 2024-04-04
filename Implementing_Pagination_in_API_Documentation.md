@@ -25,6 +25,6 @@ When designing API endpoints for pagination, it's essential to consider the foll
 
 4. **Error Handling:** Provide appropriate error messages and status codes for scenarios like invalid pagination parameters or reaching the end of the dataset.
 
-GET /users?page=1&limit=10
+`GET /users?page=1&limit=10`
 
 This request would retrieve the first page of users with a limit of 10 users per page.
