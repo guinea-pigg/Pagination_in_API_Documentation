@@ -17,7 +17,7 @@ Whether you're a junior technical writer or someone eager to deepen your knowled
 
 API documentation is essential for developers and technical writers to understand how to interact with an API effectively. Pagination is a crucial concept within API documentation, especially when dealing with large datasets. Understanding pagination ensures that developers and technical writers can navigate through data efficiently, enhancing the usability and performance of their applications.
 
-## What does this project offer
+## What does this project offer?
 
 - **Accessible learning**: Created for junior technical writers, the project offers a beginner-friendly approach to learning about pagination in API documentation.
 
