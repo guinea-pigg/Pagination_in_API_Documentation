@@ -10,19 +10,8 @@ nav_order: 2
 
 To understand the concept of API pagination, let's begin with a short overview what API and API documentation are. 
 
-<div align="center">
-<table>
-<tbody>
-<td align="center">
-<img width="1000" height="0"><br>
-<h3>An API is a set of tools or functions that allow different software systems to communicate and interact with each other.</h3><br>
-<img width="1000" height="0">
-</td>
-</tbody>
-</table>
-</div>
-
-**An API is a set of tools or functions that allow different software systems to communicate and interact with each other.** It can be compared to a bridge that enables one piece of software to access the features or data of another.
+{: .highlight }
+An API is a set of tools or functions that allow different software systems to communicate and interact with each other. It can be compared to a bridge that enables one piece of software to access the features or data of another.
 
 **Examples:** Google Maps, Twitter, YouTube.
 
