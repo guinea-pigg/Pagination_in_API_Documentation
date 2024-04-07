@@ -4,7 +4,7 @@ layout: default
 nav_order: 3
 ---
 
-# 2. Pagination Styles and Patterns
+# Pagination Styles and Patterns
 
 Pagination is a crucial aspect of API documentation, especially when dealing with large datasets that need to be split into manageable pieces for retrieval. 
 
