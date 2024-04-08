@@ -1,5 +1,5 @@
 ---
-title: References
+title: About
 layout: about
 nav_order: 8
 ---
