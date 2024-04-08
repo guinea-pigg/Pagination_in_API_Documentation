@@ -14,7 +14,7 @@ There are some common pagination styles, among which we can find:
 - [Keyset-based pagination](section-3),
 - [Page-based pagination](section-4).
 
-## <a id="section-1"></a> Offset-Based Pagination
+## Offset-Based Pagination <a id="section-1"></a>
 
 Offset-based pagination is one of the most straightforward pagination styles. It involves specifying a numeric offset (typically the number of records to skip) and a limit (the number of records to fetch) in API requests. For example, if you have a list of items and you want to retrieve items 11-20, you would set the offset to 10 and the limit to 10.
 
