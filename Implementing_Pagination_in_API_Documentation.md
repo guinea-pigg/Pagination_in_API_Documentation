@@ -4,7 +4,7 @@ layout: default
 nav_order: 4
 ---
 
-# 3. Implementing Pagination in API Documentation
+# Implementing Pagination in API Documentation
 
 Pagination that is implemented in the optimal way serves the overarching goal: enabling users to navigate through data easily and effectively. At the same time, the proper manner of pagination implementation aims to avoid consuming excessive resources or overwhelming the server.
 
