@@ -32,3 +32,5 @@ gh_edit_view_mode: "tree" # "tree" or "edit" if you want the user to jump into t
 # Supports true (default) or false
 heading_anchors: true
 
+color_scheme: my_style
+
