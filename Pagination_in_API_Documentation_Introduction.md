@@ -1,7 +1,8 @@
 ---
 title: Pagination in API Documentation. Introduction
 layout: default
-nav_order: 2
+parent: index.md
+nav_order: 1
 ---
 
 # Pagination in API Documentation. Introduction
