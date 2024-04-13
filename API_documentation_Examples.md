@@ -1,7 +1,7 @@
 ---
 title: API Documentation. Examples
 layout: default
-parent: index.md
+parent: Home
 nav_order: 2
 ---
 
