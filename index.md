@@ -2,6 +2,7 @@
 title: Home
 layout: home
 nav_order: 1
+has_children: true
 ---
 
 # Pagination Concept in API Documentation
