@@ -9,9 +9,9 @@ Pagination is a crucial aspect of API documentation, especially when dealing wit
 
 There are some common pagination styles, among which we can find: 
 - [Offset-based pagination](#Offset-Based-Pagination),
-- [Cursor-based pagination](section-2),
-- [Keyset-based pagination](section-3),
-- [Page-based pagination](section-4).
+- [Cursor-based pagination](#Cursor-Based-Pagination),
+- [Keyset-based pagination](#Keyset-Based-Pagination),
+- [Page-based pagination](#Page-Based-Pagination).
 
 ## Offset-Based Pagination <a id="Offset-Based-Pagination"></a>
 
@@ -27,7 +27,7 @@ However, offset-based pagination has its drawbacks. As the offset increases, the
 | Supports random access to pages | Limited scalability as dataset size grows                    |
 |                              | Potential for inconsistent results if data changes during pagination |
 
-## <a id="section-2"></a> Cursor-Based Pagination
+## Cursor-Based Pagination <a id="Cursor-Based-Pagination"></a>
 
 Cursor-based pagination addresses some of the performance issues associated with offset-based pagination. Instead of using numerical offsets, it uses opaque cursor values that point to specific items in the dataset. These cursors typically encode information about the position of the record, making it easier to navigate through pages efficiently.
 
@@ -41,7 +41,7 @@ Cursor-based pagination is commonly used when dealing with sorted datasets or wh
 | Scalable and maintains consistent performance | Limited support in some database systems                  |
 | Supports stable pagination across data changes |                                                        |
 
-## <a id="section-3"></a> Keyset-Based Pagination
+## Keyset-Based Pagination <a id="Keyset-Based-Pagination"></a>
 
 Keyset-based pagination, also known as seek method pagination, is similar to cursor-based pagination but relies on unique, sortable keys instead of opaque cursors. This method is often preferred for datasets where natural ordering exists, such as timestamps or alphabetical order.
 
@@ -55,7 +55,7 @@ Keyset-based pagination offers predictable performance and is well-suited for la
 | Avoids performance issues of offset-based pagination | Limited support in some database systems              |
 | Stable pagination across data changes            |                                                        |
 
-## <a id="section-4"></a> Page-Based Pagination
+## Page-Based Pagination <a id="Page-Based-Pagination"></a>
 
 Page-based pagination is perhaps the most user-friendly pagination style. Instead of dealing with offsets or cursors directly, users specify the page number and the number of items per page. For instance, requesting page 2 with 10 items per page would retrieve items 11-20.
 
