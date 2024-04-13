@@ -9,7 +9,7 @@ has_children: true
 
 ## Table of Contents
 
-- [Home](index.md)
+- [Home](index)
   - [Pagination in API Documentation. Introduction](Pagination_in_API_Documentation_Introduction)
   - [API Documentation. Overview](API_Documentation_Overview.)
 - [Pagination Styles and Patterns](Pagination_Styles_and_Patterns)
