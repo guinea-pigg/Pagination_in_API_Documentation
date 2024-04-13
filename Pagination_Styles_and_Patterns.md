@@ -9,7 +9,7 @@ nav_order: 3
 Pagination is a crucial aspect of API documentation, especially when dealing with large datasets that need to be split into manageable pieces for retrieval. 
 
 There are some common pagination styles, among which we can find: 
-- [Offset-based pagination](##Offset-Based Pagination),
+- [Offset-based pagination](##Offset-Based_Pagination),
 - [Cursor-based pagination](section-2),
 - [Keyset-based pagination](section-3),
 - [Page-based pagination](section-4).
