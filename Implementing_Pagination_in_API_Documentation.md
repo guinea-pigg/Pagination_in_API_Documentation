@@ -6,9 +6,12 @@ nav_order: 4
 
 # Implementing Pagination in API Documentation
 
-Pagination that is implemented in the optimal way serves the overarching goal: enabling users to navigate through data easily and effectively. At the same time, the proper manner of pagination implementation aims to avoid consuming excessive resources or overwhelming the server.
+Pagination that is implemented in the optimal way serves the overarching goal: enabling users to navigate through data easily and effectively. At the same time, the proper manner of pagination implementation aims to avoid consuming excessive resources or overwhelming the server. 
 
-The first pillar that constitutes the correct implementation of pagination in API documents is a proper design of API endpoints for pagination. The second pillar is to implement pagination in different programming languages, such as Python, Java and JavaScript.
+Two main pilars constituting the pagination in API documentation are:
+
+1. [API endpoint design for pagination](Implementing_Pagination_in_API_Documentation#API Endpoint Design for Pagination): it constitutes the correct implementation of pagination in API documents.
+2. Programming languages in which the pagination is implemented (Python, Java, or JavaScript).
 
 **API Endpoint Design for Pagination:**
 
