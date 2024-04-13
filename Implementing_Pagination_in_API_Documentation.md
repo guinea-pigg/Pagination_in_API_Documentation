@@ -10,10 +10,11 @@ Pagination that is implemented in the optimal way serves the overarching goal: e
 
 Two main pilars constituting the pagination in API documentation are:
 
-1. [API endpoint design for pagination](Implementing_Pagination_in_API_Documentation#API Endpoint Design for Pagination): it constitutes the correct implementation of pagination in API documents.
-2. Programming languages in which the pagination is implemented (Python, Java, or JavaScript).
+1. [API endpoint design for pagination](#API-Endpoint-Design): it constitutes the correct implementation of pagination in API documents.
+2. [Programming languages in which the pagination is implemented](#Pagination-Examples) (Python, Java, or JavaScript).
 
-**API Endpoint Design for Pagination:**
+<a id="API-Endpoint-Design"></a>
+## API Endpoint Design for Pagination:
 
 When designing API endpoints for pagination, it's essential to consider the following aspects:
 
@@ -32,7 +33,8 @@ When designing API endpoints for pagination, it's essential to consider the foll
 
 This request would retrieve the first page of users with a limit of 10 users per page.
 
-**Pagination Examples in Common Programming Languages:**
+<a id="Pagination-Examples"></a>
+## Pagination Examples in Common Programming Languages:
 
 Pagination can be implemented in API documentation in several ways: 
 - Python (using requests library)
