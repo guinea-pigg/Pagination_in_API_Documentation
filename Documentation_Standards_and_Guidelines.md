@@ -7,10 +7,11 @@ nav_order: 6
 # Documentation Standards and Guidelines
 
 Pagination is a crucial aspect of API documentation, and documenting it effectively is essential for users to understand how to retrieve and navigate through paginated data. Standards and guidelines for documenting pagination in API reference documentation cover areas such as:
-   documenting pagination in API reference,
-   writing clear pagination instructions,
-   providing usage examples.
+   - [documenting pagination in API reference](#Documenting-Pagination-in-API-reference),
+   - [writing clear pagination instructions](#Writing-Clear-Pagination-Instructions),
+   - [providing usage examples](#Providing-Usage-Examples).
 
+<a id="Documenting-Pagination-in-API-reference"></a>
 ## Documenting Pagination in API Reference
 
 1. **Introduction to Pagination:** Documentation should provide an overview of pagination and its importance in retrieving large datasets efficiently. It should also explain why pagination is necessary and how it enhances the usability of the API.
@@ -27,6 +28,7 @@ Pagination is a crucial aspect of API documentation, and documenting it effectiv
 
 4. **Error Handling:** Documentation should list any potential errors or edge cases related to pagination, such as invalid pagination parameters or reaching the end of the dataset. It should also provide clear explanations and recommended actions for users to address these issues.
 
+<a id="Writing-Clear-Pagination-Instructions"></a>
 ## Writing Clear Pagination Instructions
 
 1. **Define Usage Patterns:** Documentation should explain how users should format API requests to paginate data effectively. It should provide examples of valid pagination requests using the supported parameters.
@@ -35,6 +37,7 @@ Pagination is a crucial aspect of API documentation, and documenting it effectiv
 
 3. **Address Edge Cases:** The documentation should anticipate common questions or confusion points related to pagination, such as navigating to specific pages or handling large datasets. Provide detailed instructions or troubleshooting tips to address these scenarios.
 
+<a id="Providing-Usage-Examples"></a>
 ## Providing Usage Examples
 
 1. **Basic Examples:** The documentation should include simple, straightforward examples demonstrating how to paginate through data using the API. It should show how to retrieve the first page, navigate to the next page, and adjust pagination parameters.
