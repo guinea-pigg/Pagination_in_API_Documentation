@@ -7,17 +7,18 @@ nav_order: 5
 # Best Practices in Paginating API Documentation
 
 While implementing pagination in API documents, it is worth remembering about the core practices such as:
-- choosing a proper pagination style,
-- handling large datasets efficiently,
-- providing consistent pagination parameters.
+- [choosing a proper pagination style](#Choosing-a-Proper-Pagination-Style),
+- [handling large datasets efficiently](#Handling-Large_Datasets),
+- [providing consistent pagination parameters](#Providing-Consistent-Pagination-Parameters).
 
+<a id="Choosing-a-Proper-Pagination-Style"></a>
 ## Choosing a Proper Pagination Style:
 
 Selecting the appropriate pagination style depends on various factors such as the nature of the dataset, performance requirements, and user experience. 
 
 The base is to evaluate specific requirements in the documentation and choose the pagination style that best fits the use case. To know more about each pagination style, go to the chapter [Pagination Styles and Patterns](Pagination_Styles_and_Patterns).
 
-
+<a id="Handling-Large_Datasets"></a>
 ## Handling Large Datasets Efficiently:
 
 When dealing with large datasets, it is essential to optimize pagination to ensure efficient data retrieval and minimize server load. To meet these goals, it is important to remember about the following strategies:
@@ -29,6 +30,7 @@ When dealing with large datasets, it is essential to optimize pagination to ensu
 
 By handling large datasets efficiently, technical writers can enhance the responsiveness and scalability of a given API.
 
+<a id="Providing-Consistent-Pagination-Parameters"></a>
 ## Providing Consistent Pagination Parameters:
 
 Consistency in pagination parameters simplifies usage and enhances user experience. To meet these goals, it is important to remember about the following strategies:
