@@ -9,15 +9,15 @@ has_children: true
 
 ## Table of Contents
 
-- [Home](#Home)
-- - [Pagination in API Documentation. Introduction](#Pagination_in_API_Documentation_Introduction)
-- - [API Documentation. Overview](#API_Documentation_Overview)
-- [Pagination Styles and Patterns](#Pagination_Styles_and_Patterns)
-- [Implementing Pagination in API Documentation](#Implementing_Pagination_in_API_Documentation)
-- [Best Practices in Paginating API Documentation](#Best_Practices_in_Paginating_API_Documentation)
-- [Documentation Standards and Guidelines](#Documentation_Standards_and_Guidelines)
-- [Examples of Pagination in API Documentation](#Examples_of_Pagination_in_API_Documentation)
-- [References](#References)
+- [Home](index.md)
+  - [Pagination in API Documentation. Introduction](Pagination_in_API_Documentation_Introduction.md)
+  - [API Documentation. Overview](API_Documentation_Overview.md)
+- [Pagination Styles and Patterns](Pagination_Styles_and_Patterns.md)
+- [Implementing Pagination in API Documentation](Implementing_Pagination_in_API_Documentation.md)
+- [Best Practices in Paginating API Documentation](Best_Practices_in_Paginating_API_Documentation.md)
+- [Documentation Standards and Guidelines](Documentation_Standards_and_Guidelines.md)
+- [Examples of Pagination in API Documentation](Examples_of_Pagination_in_API_Documentation.md)
+- [References](References.md)
 
 
 Welcome to the <em>Pagination Concept in API Documentation</em> project. The repository contains the final project for Vistula post-graduate studies on Technical Communication. At the same time the repository aims to provide a comprehensive understanding of pagination within the context of API documentation. 
