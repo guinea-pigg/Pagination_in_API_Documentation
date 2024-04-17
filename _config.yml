@@ -4,6 +4,8 @@ theme: just-the-docs
 
 url: https://guinea-pigg.github.io/Pagination_in_API_Documentation
 
+docs_dir: chapters
+
 # Logo
 logo: "/img/logo.png"
 
