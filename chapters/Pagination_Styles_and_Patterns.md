@@ -39,9 +39,26 @@ Offset-based pagination has its drawbacks. As the offset increases, the database
 
 ## Cursor-Based Pagination <a id="Cursor-Based-Pagination"></a>
 
-Cursor-based pagination addresses some of the performance issues associated with offset-based pagination. Instead of using numerical offsets, it uses opaque cursor values that point to specific items in the dataset. These cursors typically encode information about the position of the record, making it easier to navigate through pages efficiently.
+Cursor-based pagination in APIs works by using a **cursor**, which is a pointer indicating a specific position within a dataset. Instead of relying on numerical offsets like in offset-based pagination, cursor-based pagination uses cursors to keep track of the current position in the dataset.
+
+Cursor-based pagination in API works in the following manner:
+
+1. Initial Request: When the user makes the first request to retrieve data, they typically don't specify a cursor. The API returns the first page of results along with a cursor representing the end of the page.
+2. Subsequent Requests: For subsequent requests to fetch additional pages of data, the user includes the cursor from the previous response in their request. This tells the API to start fetching data from where the previous page left off.
+3. Pagination Flow: With each request, the API returns a new page of results along with a new cursor indicating the end of the current page. The user uses this cursor in the next request to fetch the next page of results.
 
 Cursor-based pagination is commonly used when dealing with sorted datasets or when the underlying data can change frequently.
+
+An example of an API request to get a cursor-based paginated response:
+
+`GET /api/posts?limit=10&after=cursor123 HTTP/1.1`
+
+In this example:
+
+- Endpoint: `/api/posts` is the endpoint for retrieving a list of posts.
+- Parameters:
+  - `limit=10`: Specifies that we want to retrieve a maximum of 10 posts per page.
+  - `after=cursor123`: Specifies the cursor that indicates the starting point for the next page of results. The value cursor123 represents the cursor of the last item from the previous page.
 
 | Advantages                                  | Disadvantages                                            |
 |---------------------------------------------|----------------------------------------------------------|
