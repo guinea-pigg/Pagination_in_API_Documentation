@@ -35,7 +35,7 @@ Offset-based pagination has its drawbacks. As the offset increases, the database
 | Supports random access to pages | Limited scalability as dataset size grows                    |
 |                              | Potential for inconsistent results if data changes during pagination |
 
-[Twitter API documentation]([URL](https://developer.twitter.com/en/docs/twitter-api/pagination)) presents offset-based pagination as a method to return multiple results in one response.
+[Twitter API documentation]([URL](https://developer.twitter.com/en/docs/twitter-api/pagination) presents offset-based pagination as a method to return multiple results in one response.
 
 ## Cursor-Based Pagination <a id="Cursor-Based-Pagination"></a>
 
@@ -58,7 +58,7 @@ In this example:
 - Endpoint: `/api/posts` is the endpoint for retrieving a list of posts.
 - Parameters:
   - `limit=10`: Specifies that we want to retrieve a maximum of 10 posts per page.
-  - `after=cursor123`: Specifies the cursor that indicates the starting point for the next page of results. The value cursor123 represents the cursor of the last item from the previous page.
+  - `after=cursor123`: Specifies the cursor that indicates the starting point for the next page of results. The value `cursor123` represents the cursor of the last item from the previous page.
 
 | Advantages                                  | Disadvantages                                            |
 |---------------------------------------------|----------------------------------------------------------|
