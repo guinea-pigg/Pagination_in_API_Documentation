@@ -13,9 +13,13 @@ There are some common pagination styles, among which we can find:
 - [Keyset-based pagination](#Keyset-Based-Pagination),
 - [Page-based pagination](#Page-Based-Pagination).
 
+When an API returns a large amount of data, it can be challenging to view it all at once. For this reason the user can paginate the data by adding a new parameter to the query.
+
 ## Offset-Based Pagination <a id="Offset-Based-Pagination"></a>
 
-Offset-based pagination is one of the most straightforward pagination styles. It involves specifying a numeric offset (typically the number of records to skip) and a limit (the number of records to fetch) in API requests. For example, if you have a list of items and you want to retrieve items 11-20, you would set the offset to 10 and the limit to 10.
+Offset-based pagination is one of the most straightforward pagination styles used when it is important to retrieve a specific number of records.
+
+Offset-based pagination involves specifying a numeric offset (typically the number of records to skip) and a limit (the number of records to fetch) in API requests. For example, if you have a list of items and you want to retrieve items 11-20, you would set the offset to 10 and the limit to 10.
 
 However, offset-based pagination has its drawbacks. As the offset increases, the database needs to skip more records, which can lead to performance issues, especially with large datasets.
 
