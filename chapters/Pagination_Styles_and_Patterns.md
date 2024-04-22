@@ -20,8 +20,8 @@ The user can divide large amount of data retrieved from an API by adding certain
 Offset-based pagination is one of the most common pagination styles. It is used when a user wants to retrieve a specific number of records from an API.
 
 Offset-based pagination involves specifying additional parameters: 
-- a **numeric offset** (typically the number of records to skip), and
-- a **limit** (the number of records to fetch) in API requests.
+- a numeric `offset` (typically the number of records to skip), and
+- a `limit` (the number of records to fetch) in API requests.
 
 If there is a list of items and the user wants to retrieve items 11-20, they would set the `offset` to 10 and the `limit` to 10.
 
@@ -85,6 +85,18 @@ Keyset-based pagination involves specifying additional parameters:
 - `limit`: Specifies the maximum number of items to return in the response. This parameter controls the page size or the number of items retrieved in each request.
 - `starting_after`: Specifies the keyset indicating the starting point for fetching the next page of results. This keyset represents the identifier or value of the last item from the previous page.
 - `ending_before`: Some APIs may use an `ending_before` parameter instead of a `starting_after` parameter. This parameter specifies the keyset indicating the ending point for fetching the previous page of results.
+
+An example of an API request to get a keyset-based paginated response:
+
+`GET /api/users?limit=10&starting_after=user123`
+
+In this example:
+
+- `limit=10` specifies to retrieve up to 10 users per page.
+- `starting_after=user123` specifies to start fetching users after the user with the keyset `user123`.
+
+As the result, the API would return a page of users starting after the user with the keyset `user123`.
+
 
 | Advantages                                       | Disadvantages                                          |
 |--------------------------------------------------|--------------------------------------------------------|
