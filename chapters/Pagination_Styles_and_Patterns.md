@@ -1,5 +1,5 @@
 ---
-title: Pagination Styles and Patterns in API documentation
+title: Pagination Styles and Patterns
 layout: default
 nav_order: 3
 ---
