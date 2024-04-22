@@ -5,7 +5,7 @@ nav_order: 3
 ---
 # Pagination Styles and Patterns
 
-Pagination is a crucial aspect of API documentation, especially when dealing with large datasets that need to be split into manageable pieces for retrieval. 
+Pagination is an aspect of API documentation that enables the user to retrieve big large datasets split into smaller pieces.
 
 There are some common pagination styles, among which we can find: 
 - [Offset-based pagination](#Offset-Based-Pagination),
@@ -13,19 +13,23 @@ There are some common pagination styles, among which we can find:
 - [Keyset-based pagination](#Keyset-Based-Pagination),
 - [Page-based pagination](#Page-Based-Pagination).
 
-When an API returns a large amount of data, it can be challenging to view it all at once. For this reason the user can paginate the data by adding a new parameter to the query.
+The user can divide large amount of data retrieved from an API by adding certain parameters to their query.
 
 ## Offset-Based Pagination <a id="Offset-Based-Pagination"></a>
 
-Offset-based pagination is one of the most straightforward pagination styles used when it is important to retrieve a specific number of records.
+Offset-based pagination is one of the most common pagination styles. It is used when a user wants to retrieve a specific number of records from an API.
 
-Offset-based pagination involves specifying a **numeric offset** (typically the number of records to skip) and a **limit** (the number of records to fetch) in API requests. If there is a list of items and the user wants to retrieve items 11-20, they would set the `offset` to 10 and the `limit` to 10.
+Offset-based pagination involves specifying two additional parameters: 
+- a **numeric offset** (typically the number of records to skip), and
+- a **limit** (the number of records to fetch) in API requests.
+
+If there is a list of items and the user wants to retrieve items 11-20, they would set the `offset` to 10 and the `limit` to 10.
 
 An example of an API request to get offset-based paginated response:
 
 `GET /api/resource?offset=0&limit=10`
 
-Offset-based pagination has its drawbacks. As the offset increases, the database needs to skip more records, which can lead to performance issues, especially with large datasets.
+Offset-based pagination has its drawbacks: as the offset increases, the database needs to skip more records. It can lead to performance issues, especially with large datasets.
 
 | Advantages                 | Disadvantages                                              |
 |----------------------------|------------------------------------------------------------|
@@ -35,7 +39,7 @@ Offset-based pagination has its drawbacks. As the offset increases, the database
 | Supports random access to pages | Limited scalability as dataset size grows                    |
 |                              | Potential for inconsistent results if data changes during pagination |
 
-[Twitter API documentation](https://developer.twitter.com/en/docs/twitter-api/pagination) presents offset-based pagination as a method to return multiple results in one response.
+[Twitter API documentation](https://developer.twitter.com/en/docs/twitter-api/pagination) presents offset-based pagination as a method to return a specific number of records in one response.
 
 ## Cursor-Based Pagination <a id="Cursor-Based-Pagination"></a>
 
