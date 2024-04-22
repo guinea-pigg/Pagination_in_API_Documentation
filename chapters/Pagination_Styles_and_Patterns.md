@@ -19,7 +19,7 @@ When an API returns a large amount of data, it can be challenging to view it all
 
 Offset-based pagination is one of the most straightforward pagination styles used when it is important to retrieve a specific number of records.
 
-Offset-based pagination involves specifying a **numeric offset** (typically the number of records to skip) and a **limit** (the number of records to fetch) in API requests. For example, if there is a list of items and the user wants to retrieve items 11-20, they would set the offset to 10 and the limit to 10.
+Offset-based pagination involves specifying a **numeric offset** (typically the number of records to skip) and a **limit** (the number of records to fetch) in API requests. If there is a list of items and the user wants to retrieve items 11-20, they would set the `offset` to 10 and the `limit` to 10.
 
 An example of an API request to get offset-based paginated response:
 
