@@ -35,7 +35,7 @@ Offset-based pagination has its drawbacks. As the offset increases, the database
 | Supports random access to pages | Limited scalability as dataset size grows                    |
 |                              | Potential for inconsistent results if data changes during pagination |
 
-[Twitter API documentation]([URL](https://developer.twitter.com/en/docs/twitter-api/pagination) presents offset-based pagination as a method to return multiple results in one response.
+[Twitter API documentation](https://developer.twitter.com/en/docs/twitter-api/pagination) presents offset-based pagination as a method to return multiple results in one response.
 
 ## Cursor-Based Pagination <a id="Cursor-Based-Pagination"></a>
 
