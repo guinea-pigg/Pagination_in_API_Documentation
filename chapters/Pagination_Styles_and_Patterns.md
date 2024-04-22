@@ -19,7 +19,7 @@ The user can divide large amount of data retrieved from an API by adding certain
 
 Offset-based pagination is one of the most common pagination styles. It is used when a user wants to retrieve a specific number of records from an API.
 
-Offset-based pagination involves specifying two additional parameters: 
+Offset-based pagination involves specifying additional parameters: 
 - a **numeric offset** (typically the number of records to skip), and
 - a **limit** (the number of records to fetch) in API requests.
 
@@ -43,15 +43,15 @@ Offset-based pagination has its drawbacks: as the offset increases, the database
 
 ## Cursor-Based Pagination <a id="Cursor-Based-Pagination"></a>
 
-Cursor-based pagination in APIs works by using a **cursor**, which is a pointer indicating a specific position within a dataset. Instead of relying on numerical offsets like in offset-based pagination, cursor-based pagination uses cursors to keep track of the current position in the dataset.
+Cursor-based pagination in APIs works by using a cursor, which is a pointer indicating a specific position within a dataset. Instead of relying on numerical offsets like in offset-based pagination, cursor-based pagination uses cursors to keep track of the current position in the dataset.
 
 Cursor-based pagination in API works in the following manner:
 
-1. Initial Request: When the user makes the first request to retrieve data, they typically don't specify a cursor. The API returns the first page of results along with a cursor representing the end of the page.
+1. Initial Request: When the user makes the first request to retrieve data, they don't specify a cursor. The API returns the first page of results along with a cursor representing the end of the page.
 2. Subsequent Requests: For subsequent requests to fetch additional pages of data, the user includes the cursor from the previous response in their request. This tells the API to start fetching data from where the previous page left off.
 3. Pagination Flow: With each request, the API returns a new page of results along with a new cursor indicating the end of the current page. The user uses this cursor in the next request to fetch the next page of results.
 
-Cursor-based pagination is commonly used when dealing with sorted datasets or when the underlying data can change frequently.
+Cursor-based pagination is commonly used when dealing with sorted datasets or when the data can change frequently.
 
 An example of an API request to get a cursor-based paginated response:
 
@@ -76,9 +76,15 @@ In this example:
 
 ## Keyset-Based Pagination <a id="Keyset-Based-Pagination"></a>
 
-Keyset-based pagination, also known as seek method pagination relies on unique, sortable keys. This method is often preferred for datasets where natural ordering exists, such as timestamps or alphabetical order.
+Keyset-based pagination uses unique, sortable keys. This method is often preferred for datasets where natural ordering exists, such as timestamps or alphabetical order.
 
 Keyset-based pagination offers predictable performance and is well-suited for large datasets, as it doesn't suffer from the performance issues associated with offset-based pagination.
+
+Keyset-based pagination involves specifying additional parameters:
+
+- `limit`: Specifies the maximum number of items to return in the response. This parameter controls the page size or the number of items retrieved in each request.
+- `starting_after`: Specifies the keyset indicating the starting point for fetching the next page of results. This keyset represents the identifier or value of the last item from the previous page.
+- `ending_before`: Some APIs may use an `ending_before` parameter instead of a `starting_after` parameter. This parameter specifies the keyset indicating the ending point for fetching the previous page of results.
 
 | Advantages                                       | Disadvantages                                          |
 |--------------------------------------------------|--------------------------------------------------------|
@@ -87,6 +93,8 @@ Keyset-based pagination offers predictable performance and is well-suited for la
 | Well-suited for datasets with natural ordering   | Not suitable for unordered datasets                    |
 | Avoids performance issues of offset-based pagination | Limited support in some database systems              |
 | Stable pagination across data changes            |                                                        |
+
+Stripe API Reference documentation(https://docs.stripe.com/api) presents keyset-based pagination.
 
 ## Page-Based Pagination <a id="Page-Based-Pagination"></a>
 
