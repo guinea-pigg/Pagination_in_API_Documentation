@@ -13,21 +13,24 @@ There are some common pagination styles, among which we can find:
 - [Keyset-based pagination](#Keyset-Based-Pagination),
 - [Page-based pagination](#Page-Based-Pagination).
 
-The user can divide large amount of data retrieved from an API by adding certain parameters to their query.
+The client can divide large amount of data retrieved from an API by adding certain parameters to their query.
 
 ## Offset-Based Pagination <a id="Offset-Based-Pagination"></a>
 
-Offset-based pagination is one of the most common pagination styles. It is used when a user wants to retrieve a specific number of records from an API.
+Offset-based pagination is one of the most common pagination styles. It is used when a client wants to retrieve a specific number of records from an API.
 
 Offset-based pagination involves specifying additional parameters: 
 - a numeric `offset` (typically the number of records to skip), and
 - a `limit` (the number of records to fetch) in API requests.
 
-If there is a list of items and the user wants to retrieve items 11-20, they would set the `offset` to 10 and the `limit` to 10.
-
 An example of an API request to get offset-based paginated response:
 
 `GET /api/resource?offset=0&limit=10`
+
+- Endpoint: `/api/resource` This endpoint specifies the resource that the client wants to access. It could be a resource such as a list of users, products, or posts.
+- Parameters:
+  - `offset=0`: Specifies that the client wants to start fetching records from the beginning of the dataset.
+  - `limit=10`: Specifies that the client wants to retrieve a maximum of 10 records per page.
 
 Offset-based pagination has its drawbacks: as the offset increases, the database needs to skip more records. It can lead to performance issues, especially with large datasets.
 
@@ -39,7 +42,7 @@ Offset-based pagination has its drawbacks: as the offset increases, the database
 | Supports random access to pages | Limited scalability as dataset size grows                    |
 |                              | Potential for inconsistent results if data changes during pagination |
 
-[Twitter API documentation](https://developer.twitter.com/en/docs/twitter-api/pagination) presents offset-based pagination as a method to return a specific number of records in one response.
+[Twitter API documentation](https://developer.twitter.com/en/docs/twitter-api/pagination) presents offset-based pagination.
 
 ## Cursor-Based Pagination <a id="Cursor-Based-Pagination"></a>
 
@@ -47,9 +50,9 @@ Cursor-based pagination in APIs works by using a cursor, which is a pointer indi
 
 Cursor-based pagination in API works in the following manner:
 
-1. Initial Request: When the user makes the first request to retrieve data, they don't specify a cursor. The API returns the first page of results along with a cursor representing the end of the page.
-2. Subsequent Requests: For subsequent requests to fetch additional pages of data, the user includes the cursor from the previous response in their request. This tells the API to start fetching data from where the previous page left off.
-3. Pagination Flow: With each request, the API returns a new page of results along with a new cursor indicating the end of the current page. The user uses this cursor in the next request to fetch the next page of results.
+1. Initial Request: When the client makes the first request to retrieve data, they don't specify a cursor. The API returns the first page of results along with a cursor representing the end of the page.
+2. Subsequent Requests: For subsequent requests to fetch additional pages of data, the client includes the cursor from the previous response in their request. This tells the API to start fetching data from where the previous page left off.
+3. Pagination Flow: With each request, the API returns a new page of results along with a new cursor indicating the end of the current page. The client uses this cursor in the next request to fetch the next page of results.
 
 Cursor-based pagination is commonly used when dealing with sorted datasets or when the data can change frequently.
 
@@ -61,7 +64,7 @@ In this example:
 
 - Endpoint: `/api/posts` is the endpoint for retrieving a list of posts.
 - Parameters:
-  - `limit=10`: Specifies that we want to retrieve a maximum of 10 posts per page.
+  - `limit=10`: Specifies that the client wants to retrieve a maximum of 10 posts per page.
   - `after=cursor123`: Specifies the cursor that indicates the starting point for the next page of results. The value `cursor123` represents the cursor of the last item from the previous page.
 
 | Advantages                                  | Disadvantages                                            |
@@ -92,8 +95,8 @@ An example of an API request to get a keyset-based paginated response:
 
 In this example:
 
-- `limit=10` specifies to retrieve up to 10 users per page.
-- `starting_after=user123` specifies to start fetching users after the user with the keyset `user123`.
+- `limit=10` specifies the client wants to retrieve up to 10 users per page.
+- `starting_after=user123` specifies the client wants to start fetching users after the user with the keyset `user123`.
 
 As the result, the API would return a page of users starting after the user with the keyset `user123`.
 
@@ -110,9 +113,20 @@ Stripe API Reference documentation(https://docs.stripe.com/api) presents keyset-
 
 ## Page-Based Pagination <a id="Page-Based-Pagination"></a>
 
-Page-based pagination is perhaps the most user-friendly pagination style. Instead of dealing with offsets or cursors directly, users specify the page number and the number of items per page. For instance, requesting page 2 with 10 items per page would retrieve items 11-20.
+Page-based pagination is a user-friendly pagination style. Instead of dealing with offsets or cursors directly, a client specifies the page number and the number of items per page. There typically aren't additional parameters specific to page-based pagination.
 
-While page-based pagination is intuitive for users, it may not be as efficient for large datasets, as it doesn't provide mechanisms for efficiently navigating to arbitrary points in the dataset.
+While page-based pagination is intuitive for clients, it may not be as efficient for large datasets, as it doesn't provide mechanisms for efficiently navigating to arbitrary points in the dataset.
+
+An example of an API request to get a page-based paginated response:
+
+`GET /api/posts?page=2&per_page=10`
+
+In this example:
+
+- Endpoint: `/api/posts` specifies the resource that the client wants to access. Tt could be a a list of posts, articles, or comments.
+- Parameters:
+  - `page=2`: Indicates that the clients wants to retrieve the second page of results.
+  - `per_page=10`: Indicates that the clients wants to retrieve 10 records per page.
 
 | Advantages                                     | Disadvantages                                              |
 |------------------------------------------------|------------------------------------------------------------|
@@ -121,3 +135,6 @@ While page-based pagination is intuitive for users, it may not be as efficient f
 | Simple implementation for developers           | May lead to inconsistent results if data changes           |
 | Facilitates easy navigation through pages      | Limited scalability as dataset size grows                   |
 |                                                | Potential for increased server load due to large page sizes |
+
+[GitHub REST API documentation](https://docs.github.com/en/rest?apiVersion=2022-11-28) presents page-based pagination.
+
