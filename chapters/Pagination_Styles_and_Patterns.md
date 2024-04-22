@@ -72,9 +72,11 @@ In this example:
 | Scalable and maintains consistent performance | Limited support in some database systems                  |
 | Supports stable pagination across data changes |                                                        |
 
+[GitHub REST API documentation](https://docs.github.com/en/rest?apiVersion=2022-11-28) presents cursor-based pagination.
+
 ## Keyset-Based Pagination <a id="Keyset-Based-Pagination"></a>
 
-Keyset-based pagination, also known as seek method pagination, is similar to cursor-based pagination but relies on unique, sortable keys instead of opaque cursors. This method is often preferred for datasets where natural ordering exists, such as timestamps or alphabetical order.
+Keyset-based pagination, also known as seek method pagination relies on unique, sortable keys. This method is often preferred for datasets where natural ordering exists, such as timestamps or alphabetical order.
 
 Keyset-based pagination offers predictable performance and is well-suited for large datasets, as it doesn't suffer from the performance issues associated with offset-based pagination.
 
