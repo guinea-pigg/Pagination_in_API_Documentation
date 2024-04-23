@@ -8,6 +8,7 @@ nav_order: 1
 # Pagination in API Documentation. Introduction
 
 ## Definition of Pagination
+
 {: .highlight } Pagination in API documentation refers to the practice of breaking large sets of data into smaller, more manageable pieces called <em>pages</em>. These pages allow users to retrieve data progressively instead of all at once. Each page typically contains a subset of the total dataset, enabling efficient data retrieval and reducing the strain on both the client and server.
 
 ## Why Pagination is Important in API Documentation
