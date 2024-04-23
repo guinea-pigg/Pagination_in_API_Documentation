@@ -13,11 +13,13 @@ There are some common pagination styles, among which we can find:
 - [Keyset-based pagination](#Keyset-Based-Pagination),
 - [Page-based pagination](#Page-Based-Pagination).
 
-The client can divide large amount of data retrieved from an API by adding certain parameters to their query.
+The client (i.e. a person who uses an aPI) can divide large amount of data retrieved from an API by adding certain parameters to their query.
 
 ## Offset-Based Pagination <a id="Offset-Based-Pagination"></a>
 
 Offset-based pagination is one of the most common pagination styles. It is used when a client wants to retrieve a specific number of records from an API.
+
+Offset-based pagination has its drawbacks: as the offset increases, the database needs to skip more records. It can lead to performance issues, especially with large datasets.
 
 Offset-based pagination involves specifying additional parameters: 
 - a numeric `offset` (typically the number of records to skip), and
@@ -32,7 +34,6 @@ An example of an API request to get offset-based paginated response:
   - `offset=0`: Specifies that the client wants to start fetching records from the beginning of the dataset.
   - `limit=10`: Specifies that the client wants to retrieve a maximum of 10 records per page.
 
-Offset-based pagination has its drawbacks: as the offset increases, the database needs to skip more records. It can lead to performance issues, especially with large datasets.
 
 | Advantages                 | Disadvantages                                              |
 |----------------------------|------------------------------------------------------------|
@@ -109,7 +110,7 @@ As the result, the API would return a page of users starting after the user with
 | Avoids performance issues of offset-based pagination | Limited support in some database systems              |
 | Stable pagination across data changes            |                                                        |
 
-Stripe API Reference documentation(https://docs.stripe.com/api) presents keyset-based pagination.
+[Stripe API Reference documentation](https://docs.stripe.com/api) presents keyset-based pagination.
 
 ## Page-Based Pagination <a id="Page-Based-Pagination"></a>
 
