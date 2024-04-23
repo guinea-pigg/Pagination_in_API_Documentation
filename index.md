@@ -21,7 +21,6 @@ Welcome to the <em>Pagination Concept in API Documentation</em> project. The rep
 - [Implementing Pagination in API Documentation](Implementing_Pagination_in_API_Documentation)
 - [Best Practices in Paginating API Documentation](Best_Practices_in_Paginating_API_Documentation)
 - [Documentation Standards and Guidelines](Documentation_Standards_and_Guidelines)
-- [Examples of Pagination in API Documentation](Examples_of_Pagination_in_API_Documentation)
 - [References](References)
 
 ## Frequently Asked Questions
