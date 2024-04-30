@@ -13,7 +13,7 @@ There are some common pagination styles, among which we can find:
 - [Keyset-based pagination](#Keyset-Based-Pagination),
 - [Page-based pagination](#Page-Based-Pagination).
 
-The client (i.e. a person who uses an aPI) can divide large amount of data retrieved from an API by adding certain parameters to their query.
+The client (i.e. a person who uses an API) can divide large amount of data retrieved from an API by adding certain parameters to their query.
 
 ## Offset-Based Pagination <a id="Offset-Based-Pagination"></a>
 
