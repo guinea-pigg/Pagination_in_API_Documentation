@@ -14,7 +14,7 @@ Pagination is a crucial aspect of API documentation, and documenting it effectiv
 <a id="Documenting-Pagination-in-API-reference"></a>
 ## Documenting Pagination in API Reference
 
-1. **Introduction to Pagination:** Documentation should provide an overview of pagination and its importance in retrieving large datasets efficiently. It should also explain why pagination is necessary and how it enhances the usability of the API.
+1. **Introduction to Pagination:** Documentation should provide an overview of pagination and its importance in retrieving large datasets efficiently.
 
 2. **Pagination Parameters:** Documentation should describe the pagination parameters supported by the API, including:
    - `page`: specifying the page number to retrieve.
