@@ -10,7 +10,7 @@ Pagination that is implemented in the optimal way serves the overarching goal: e
 
 Two main pilars constituting the pagination in API documentation are:
 
-1. [API endpoint design for pagination](#API-Endpoint-Design): it constitutes the correct implementation of pagination in API documents.
+1. [API endpoint design for pagination](#API-Endpoint-Design) for the correct implementation.
 2. [Programming languages in which the pagination is implemented](#Pagination-Examples) (Python, Java, or JavaScript).
 
 <a id="API-Endpoint-Design"></a>
