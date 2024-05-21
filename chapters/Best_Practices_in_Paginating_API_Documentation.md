@@ -12,14 +12,14 @@ While implementing pagination in API documents, it is worth remembering about th
 - [providing consistent pagination parameters](#Providing-Consistent-Pagination-Parameters).
 
 <a id="Choosing-a-Proper-Pagination-Style"></a>
-## Choosing a Proper Pagination Style:
-
-Selecting the appropriate pagination style depends on various factors such as the nature of the dataset, performance requirements, and user experience. 
+## Choosing a Proper Pagination Style
 
 The base is to evaluate specific requirements in the documentation and choose the pagination style that best fits the use case. To know more about each pagination style, go to the chapter [Pagination Styles and Patterns](Pagination_Styles_and_Patterns).
 
+Selecting the appropriate pagination style depends on various factors such as the nature of the dataset, performance requirements, and user experience. 
+
 <a id="Handling-Large_Datasets"></a>
-## Handling Large Datasets Efficiently:
+## Handling Large Datasets Efficiently
 
 When dealing with large datasets, it is essential to optimize pagination to ensure efficient data retrieval and minimize server load. To meet these goals, it is important to remember about the following strategies:
 
@@ -28,10 +28,10 @@ When dealing with large datasets, it is essential to optimize pagination to ensu
 - Using caching mechanisms to store frequently accessed data and reduce the need for repetitive queries to the server.
 - Implementing server-side optimizations to improve query performance, such as indexing relevant columns in the database.
 
-By handling large datasets efficiently, technical writers can enhance the responsiveness and scalability of a given API.
+By handling large datasets efficiently, you can enhance the responsiveness and scalability of a given API.
 
 <a id="Providing-Consistent-Pagination-Parameters"></a>
-## Providing Consistent Pagination Parameters:
+## Providing Consistent Pagination Parameters
 
 Consistency in pagination parameters simplifies usage and enhances user experience. To meet these goals, it is important to remember about the following strategies:
 
