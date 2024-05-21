@@ -19,8 +19,6 @@ The client (i.e. a person who uses an API) can divide large amount of data retri
 
 Offset-based pagination is one of the most common pagination styles. It is used when a client wants to retrieve a specific number of records from an API.
 
-Offset-based pagination has its drawbacks: as the offset increases, the database needs to skip more records. It can lead to performance issues, especially with large datasets.
-
 Offset-based pagination involves specifying additional parameters: 
 - a numeric `offset` (typically the number of records to skip), and
 - a `limit` (the number of records to fetch) in API requests.
@@ -37,11 +35,10 @@ An example of an API request to get offset-based paginated response:
 
 | Advantages                 | Disadvantages                                              |
 |----------------------------|------------------------------------------------------------|
-| Simple and easy to implement | Performance degrades with large datasets                   |
+| Simple and easy to implement | Performance degrades with large datasets. Limited scalability as dataset size grows |
 | Straightforward for developers | Increased server load due to skipping records               |
-| Allows for precise navigation | Not suitable for real-time or frequently updated datasets   |
-| Supports random access to pages | Limited scalability as dataset size grows                    |
-|                              | Potential for inconsistent results if data changes during pagination |
+| Allows for precise navigation | Not suitable for real-time or frequently updated datasets. Potential for inconsistent results if data changes during pagination |
+| Supports random access to pages |                     |
 
 [Twitter API documentation](https://developer.twitter.com/en/docs/twitter-api/pagination) presents offset-based pagination.
 
@@ -70,11 +67,10 @@ In this example:
 
 | Advantages                                  | Disadvantages                                            |
 |---------------------------------------------|----------------------------------------------------------|
-| Improved performance with large datasets    | Requires support for cursor-based navigation on client side |
+| Improved performance with large datasets. Scalable and maintains consistent performance | Requires support for cursor-based navigation on client side |
 | Efficient for navigating sorted datasets   | Complexity in handling cursor values                     |
-| Suitable for real-time or frequently updated datasets | Cursor values may become invalid if underlying data changes |
-| Scalable and maintains consistent performance | Limited support in some database systems                  |
-| Supports stable pagination across data changes |                                                        |
+| Suitable for real-time or frequently updated datasets.  Supports stable pagination across data changes | Cursor values may become invalid if underlying data changes |
+|  | Limited support in some database systems                  |
 
 [GitHub REST API documentation](https://docs.github.com/en/rest?apiVersion=2022-11-28) presents cursor-based pagination.
 
@@ -104,11 +100,10 @@ As the result, the API would return a page of users starting after the user with
 
 | Advantages                                       | Disadvantages                                          |
 |--------------------------------------------------|--------------------------------------------------------|
-| Predictable performance                          | Requires a unique, sortable key in the dataset        |
+| Predictable performance. Avoids performance issues of offset-based pagination | Requires a unique, sortable key in the dataset        |
 | Efficient for large datasets                     | Complexity in handling multi-column ordering            |
 | Well-suited for datasets with natural ordering   | Not suitable for unordered datasets                    |
-| Avoids performance issues of offset-based pagination | Limited support in some database systems              |
-| Stable pagination across data changes            |                                                        |
+| Stable pagination across data changes | Limited support in some database systems              |
 
 [Stripe API Reference documentation](https://docs.stripe.com/api) presents keyset-based pagination.
 
@@ -131,11 +126,10 @@ In this example:
 
 | Advantages                                     | Disadvantages                                              |
 |------------------------------------------------|------------------------------------------------------------|
-| Intuitive and user-friendly                    | Inefficient for large datasets                             |
-| Easy for users to understand and implement     | Lacks support for efficient navigation to arbitrary points |
-| Simple implementation for developers           | May lead to inconsistent results if data changes           |
-| Facilitates easy navigation through pages      | Limited scalability as dataset size grows                   |
-|                                                | Potential for increased server load due to large page sizes |
+| Intuitive and user-friendly                    | Inefficient for large datasets. Limited scalability as dataset size grows |
+| Simple implementation for developers | Lacks support for efficient navigation to arbitrary points |
+| Facilitates easy navigation through pages | May lead to inconsistent results if data changes           |
+|       | Potential for increased server load due to large page sizes |
 
 [GitHub REST API documentation](https://docs.github.com/en/rest?apiVersion=2022-11-28) presents page-based pagination.
 
