@@ -5,15 +5,13 @@ nav_order: 3
 ---
 # Pagination Styles and Patterns
 
-Pagination is an aspect of API documentation that enables the user to retrieve big large datasets split into smaller pieces.
+Pagination is an aspect of API documentation that enables the user to retrieve big large datasets split into smaller pieces. The client (i.e. a person who uses an API) can divide large amount of data retrieved from an API by adding certain parameters to their query.
 
 There are some common pagination styles, among which we can find: 
 - [Offset-based pagination](#Offset-Based-Pagination),
 - [Cursor-based pagination](#Cursor-Based-Pagination),
 - [Keyset-based pagination](#Keyset-Based-Pagination),
 - [Page-based pagination](#Page-Based-Pagination).
-
-The client (i.e. a person who uses an API) can divide large amount of data retrieved from an API by adding certain parameters to their query.
 
 ## Offset-Based Pagination <a id="Offset-Based-Pagination"></a>
 
