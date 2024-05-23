@@ -30,7 +30,7 @@ API documentation typically includes parts such as:
 
 ## API Documentation. Examples
 
-1. **Twitter API Documentation**: Twitter provides extensive documentation for its API, allowing developers to integrate Twitter functionality into their applications. [Twitter API Documentation](https://developer.twitter.com/en/docs)
+1. **[Twitter API Documentation](https://developer.twitter.com/en/docs)**: Twitter provides extensive documentation for its API, allowing developers to integrate Twitter functionality into their applications. 
 
 2. **Google Maps Platform API Documentation**: Google Maps Platform offers various APIs for mapping, geolocation, and places. [Google Maps Platform API Documentation](https://developers.google.com/maps/documentation)
 
