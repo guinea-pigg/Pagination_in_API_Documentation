@@ -34,7 +34,7 @@ When designing API endpoints for pagination, it's essential to consider the foll
 This request would retrieve the first page of users with a limit of 10 users per page.
 
 <a id="Pagination-Examples"></a>
-## Pagination Examples in Common Programming Languages:
+## Programming Languages in which the Pagination is Implemented:
 
 Pagination can be implemented in API documentation in several ways: 
 - Python (using requests library)
