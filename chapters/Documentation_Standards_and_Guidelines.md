@@ -1,10 +1,10 @@
 ---
-title: Documentation Standards and Guidelines
+title: API Documentation Standards and Guidelines
 layout: default
 nav_order: 6
 ---
 
-# Documentation Standards and Guidelines
+# API Documentation Standards and Guidelines
 
 Pagination is a crucial aspect of API documentation, and documenting it effectively is essential for users to understand how to retrieve and navigate through paginated data. Standards and guidelines for documenting pagination in API reference documentation cover areas such as:
    - [documenting pagination in API reference](#Documenting-Pagination-in-API-reference),
@@ -20,6 +20,14 @@ Pagination is a crucial aspect of API documentation, and documenting it effectiv
    - `page`: specifying the page number to retrieve.
    - `limit`: specifying the maximum number of items per page.
    - additionally: any other parameters specific to the pagination style used, such as cursor values or keyset identifiers.
+
+Example from GitHub API:
+
+`{
+  "page": 2,
+  "per_page": 10,
+  "since": "2023-01-01T00:00:00Z"
+}`
 
 3. **Response Structure:** Documentation should describe the structure of the API response when paginating data, including:
    - total number of records available,
