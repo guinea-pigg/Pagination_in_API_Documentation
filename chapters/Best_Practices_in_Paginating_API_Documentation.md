@@ -1,10 +1,10 @@
 ---
-title: Best Practices in Paginating API Documentation
+title: Best Practices in Paginating API
 layout: default
 nav_order: 5
 ---
 
-# Best Practices in Paginating API Documentation
+# Best Practices in Paginating API
 
 While implementing pagination in API documents, it is worth remembering about the core practices such as:
 - [choosing a proper pagination style](#Choosing-a-Proper-Pagination-Style),
