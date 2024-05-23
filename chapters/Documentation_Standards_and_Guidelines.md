@@ -21,7 +21,7 @@ Pagination is a crucial aspect of API documentation, and documenting it effectiv
    - `limit`: specifying the maximum number of items per page.
    - additionally: any other parameters specific to the pagination style used, such as cursor values or keyset identifiers.
 
-Example from GitHub API:
+[Example from GitHub API](https://docs.github.com/en/rest/using-the-rest-api/getting-started-with-the-rest-api?apiVersion=2022-11-28#pagination):
 
 `{
   "page": 2,
@@ -34,7 +34,27 @@ Example from GitHub API:
    - links or cursors for navigating to the next or previous pages,
    - representation of the current page of data.
 
+[Example from Twitter API](https://developer.x.com/en/docs/twitter-api/pagination):
+
+`{
+  "total_count": 100,
+  "next_cursor": "abcd1234",
+  "previous_cursor": "wxyz5678",
+  "items": [
+    // items for the current page
+  ]
+}`
+
 4. **Error Handling:** Documentation should list any potential errors or edge cases related to pagination, such as invalid pagination parameters or reaching the end of the dataset. It should also provide clear explanations and recommended actions for users to address these issues.
+
+[Example from Spotify API](https://developer.spotify.com/documentation/web-api/reference/get-users-top-artists-and-tracks):
+
+`{
+  "error": {
+    "status": 400,
+    "message": "Invalid limit value"
+  }
+}`
 
 <a id="Writing-Clear-Pagination-Instructions"></a>
 ## Writing Clear Pagination Instructions
