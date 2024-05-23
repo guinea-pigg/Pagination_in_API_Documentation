@@ -61,9 +61,19 @@ Pagination is a crucial aspect of API documentation, and documenting it effectiv
 
 1. **Define Usage Patterns:** Documentation should explain how users should format API requests to paginate data effectively. It should provide examples of valid pagination requests using the supported parameters.
 
+[Example from Stripe API](https://docs.stripe.com/api/pagination):
+`GET /v1/customers?limit=10&starting_after=cus_123456789`
+
 2. **Clarify Default Behavior:** If the API has default pagination settings or behaviors, documentation should explain them explicitly. Users should understand what happens if they don't specify pagination parameters in their requests.
 
+[Example from Mailchimp API]():LINK !!
+`By default, the Mailchimp API returns the first page of results with 10 items per page.`
+
 3. **Address Edge Cases:** The documentation should anticipate common questions or confusion points related to pagination, such as navigating to specific pages or handling large datasets. Provide detailed instructions or troubleshooting tips to address these scenarios.
+
+[Example from Google Books API](https://developers.google.com/books/docs/v1/using):
+
+`To navigate to a specific page, include the startIndex parameter in your request. If the specified index exceeds the total number of items, the API will return an empty list.`
 
 <a id="Providing-Usage-Examples"></a>
 ## Providing Usage Examples
