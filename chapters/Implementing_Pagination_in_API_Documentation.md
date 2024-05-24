@@ -42,7 +42,7 @@ This request would retrieve the first page of users with a limit of 10 users per
 <a id="Pagination-Examples"></a>
 ## Programming Languages in which the Pagination is Implemented:
 
-Pagination can be implemented in API documentation in several ways: 
+Technical writers should remember that pagination can be implemented in API documentation in several ways: 
 - Python (using requests library)
 - JavaScript (using fetch API)
 - Java (using HttpURLConnection)
