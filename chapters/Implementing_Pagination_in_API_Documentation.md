@@ -1,10 +1,10 @@
 ---
-title: Implementing Pagination in API
+title: Pagination Implementation in API
 layout: default
 nav_order: 4
 ---
 
-# Implementing Pagination in API
+# Pagination Implementation in API
 
 Effective pagination in API documentation ensures that users can navigate through data efficiently without overloading the server or consuming excessive resources. For technical writers, it's important to understand and clearly describe both the design of API endpoints for pagination and the implementation in various programming languages.
 
