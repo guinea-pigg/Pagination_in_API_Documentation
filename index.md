@@ -18,7 +18,7 @@ Welcome to the <em>Pagination Concept in API Documentation</em> project. The rep
 
 Whether you're a junior technical writer or someone eager to deepen your knowledge about API and API documentation without prior expertize, this project is designed with you in mind.
 
-### Purpose of the project
+### What is the purpose of the project?
 
 API documentation is essential for developers and technical writers to understand how to interact with an API effectively. Pagination is a crucial concept within API documentation, especially when dealing with large datasets. To understand the concept of pagination in API it is also needed to have general knowledge of API in general. Understanding pagination ensures that developers and technical writers can navigate through data efficiently, enhancing the usability and performance of their applications.
 
