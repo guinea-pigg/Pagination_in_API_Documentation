@@ -51,4 +51,4 @@ A good technical writer doesn't have to be able to code in different programming
 
 - Provide relevant and accurate examples
 - Ensure the documentation is usable by developers of different backgrounds
-- Build trust and credibility with your audience
+- Build trust and credibility with the audience
