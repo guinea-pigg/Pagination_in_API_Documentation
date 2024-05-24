@@ -14,13 +14,18 @@ Welcome to the <em>Pagination Concept in API Documentation</em> project. The rep
 
 ## Frequently Asked Questions
 
-### Who can benefit from the documentation?
+### Who can benefit from the project?
 
-Whether you're a junior technical writer or someone eager to deepen your knowledge about API documentation without prior expertise, this project is designed with you in mind.
+Whether you're a junior technical writer or someone eager to deepen your knowledge about API and API documentation without prior expertize, this project is designed with you in mind.
 
-### Purpose of the documentation
+### Purpose of the project
 
-API documentation is essential for developers and technical writers to understand how to interact with an API effectively. Pagination is a crucial concept within API documentation, especially when dealing with large datasets. Understanding pagination ensures that developers and technical writers can navigate through data efficiently, enhancing the usability and performance of their applications.
+API documentation is essential for developers and technical writers to understand how to interact with an API effectively. Pagination is a crucial concept within API documentation, especially when dealing with large datasets. To understand the concept of pagination in API it is also needed to have general knowledge of API in general. Understanding pagination ensures that developers and technical writers can navigate through data efficiently, enhancing the usability and performance of their applications.
+
+Having that in mind, the project aims to:
+- Give general overview what API is
+- Describe the basics of pagination in API and in API documentation
+- Acquaint the junior technical writers with good practises regarding API documentation.
 
 ### What does this project offer?
 
@@ -28,7 +33,9 @@ API documentation is essential for developers and technical writers to understan
 
 - **Clear explanation**: The documentation gives straightforward explanations of pagination concepts, breaking down complex ideas into smaller portions of knowledge.
   
-- **Practical examples**: The documentation provides real-world examples that help understanding the API pagination concept better. 
+- **Practical examples**: The documentation provides real-world examples that help understanding the API pagination concept better.
+
+The project is a good starting point to deepend the knowledge about API and API documentation.
 
 ### Get started
 
