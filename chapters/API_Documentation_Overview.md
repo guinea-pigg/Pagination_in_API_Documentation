@@ -48,4 +48,4 @@ API documentation typically includes parts such as:
 
 9. **[Reddit API Documentation](https://www.reddit.com/dev/api/)**: Reddit offers APIs for accessing various aspects of the platform including posts, comments, and user data.
 
-10. **Microsoft Graph API Documentation**: Microsoft Graph API enables developers to access data and intelligence from Microsoft services. [Microsoft Graph API Documentation](https://docs.microsoft.com/en-us/graph/)
+10. **[Microsoft Graph API Documentation](https://docs.microsoft.com/en-us/graph/)**: Microsoft Graph API enables developers to access data and intelligence from Microsoft services.
