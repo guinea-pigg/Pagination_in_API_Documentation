@@ -47,3 +47,8 @@ Pagination can be implemented in API documentation in several ways:
 - JavaScript (using fetch API)
 - Java (using HttpURLConnection)
 
+A good technical writer doesn't have to be able to code in different programming languages. At the same time, though, understanding how to implement pagination in Python, JavaScript, and Java is crucial for a technical writer because it allows them to:
+
+- Provide relevant and accurate examples
+- Ensure the documentation is usable by developers of different backgrounds
+- Build trust and credibility with your audience
