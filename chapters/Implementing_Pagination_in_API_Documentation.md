@@ -13,6 +13,12 @@ Technical writers should remember that two main pilars constituting the paginati
 1. [API endpoint design for pagination](#API-Endpoint-Design) for the correct implementation.
 2. [Programming languages in which the pagination is implemented](#Pagination-Examples) (Python, Java, or JavaScript).
 
+### Why technical writers need to know this?
+
+- Knowing these details ensures the documentation is accurate and comprehensive, covering all aspects users need to successfully interact with the API.
+- Well-documented APIs are easier for developers to use, leading to higher adoption rates and better satisfaction.
+- Thorough and precise documentation reflects well on the API provider, establishing credibility and trust with users.
+
 <a id="API-Endpoint-Design"></a>
 ## API Endpoint Design for Pagination:
 
@@ -32,12 +38,6 @@ When API designers create endpoints for pagination, they have to consider the fo
 `GET /users?page=1&limit=10`
 
 This request would retrieve the first page of users with a limit of 10 users per page.
-
-### Why technical writers need to know this?
-
-- Accuracy: Knowing these details ensures the documentation is accurate and comprehensive, covering all aspects users need to successfully interact with the API.
-- Usability: Well-documented APIs are easier for developers to use, leading to higher adoption rates and better satisfaction.
-- Professionalism: Thorough and precise documentation reflects well on the API provider, establishing credibility and trust with users.
 
 <a id="Pagination-Examples"></a>
 ## Programming Languages in which the Pagination is Implemented:
