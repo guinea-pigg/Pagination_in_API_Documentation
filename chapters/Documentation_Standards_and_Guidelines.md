@@ -20,15 +20,13 @@ Documentation should provide an overview of pagination and its importance in ret
 
 It is worth noting that many API documentations have general introductions with limited space for the pagination concept. Pagination is usually just a small part of the overall API documentation introduction.
 
-An extensive chapter on pagination in APIs is available on the X Developer Platform. The chapter, titled "Pagination," includes:
+An extensive chapter on pagination in APIs is available on the [X Developer Platform](https://developer.x.com/en/docs/twitter-api/pagination). The chapter, titled "Pagination," includes:
 - use cases for pagination,
 - pagination token definitions,
 - fundamentals of pagination,
 - pagination examples.
 
 ...FOTO...
-
-Example: [Twitter API](https://developer.x.com/en/docs/twitter-api/pagination)
 
 ### Pagination Parameters:
 
@@ -37,7 +35,10 @@ Documentation should describe the pagination parameters supported by the API, in
    - `limit`: specifying the maximum number of items per page.
    - additionally: any other parameters specific to the pagination style used, such as cursor values or keyset identifiers.
 
-[Example from GitHub API](https://docs.github.com/en/rest/using-the-rest-api/getting-started-with-the-rest-api?apiVersion=2022-11-28#pagination):
+[GitHub API](https://docs.github.com/en/rest/using-the-rest-api/getting-started-with-the-rest-api?apiVersion=2022-11-28#pagination) categorizes parameters into three groups:
+- path parameters,
+- body parameters,
+- query parameters.
 
 ...FOTO...
 
