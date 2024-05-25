@@ -20,13 +20,11 @@ Documentation should provide an overview of pagination and its importance in ret
 
 It is worth noting that many API documentations have general introductions with limited space for the pagination concept. Pagination is usually just a small part of the overall API documentation introduction.
 
-An extensive chapter on pagination in APIs is available on the [X Developer Platform](https://developer.x.com/en/docs/twitter-api/pagination). The chapter, titled "Pagination," includes:
+An extensive chapter on pagination in APIs is available on the [X Developer Platform](https://developer.x.com/en/docs/twitter-api/pagination). The chapter, titled *Pagination*, includes:
 - use cases for pagination,
 - pagination token definitions,
 - fundamentals of pagination,
 - pagination examples.
-
-...FOTO...
 
 ### Pagination Parameters:
 
@@ -35,12 +33,7 @@ Documentation should describe the pagination parameters supported by the API, in
    - `limit`: specifying the maximum number of items per page.
    - additionally: any other parameters specific to the pagination style used, such as cursor values or keyset identifiers.
 
-[GitHub API](https://docs.github.com/en/rest/using-the-rest-api/getting-started-with-the-rest-api?apiVersion=2022-11-28#pagination) categorizes parameters into three groups:
-- path parameters,
-- body parameters,
-- query parameters.
-
-...FOTO...
+An example showing this practice is documentation on [X Developer Platform](https://developer.x.com/en/docs/twitter-api/pagination). It lists different parameters that can facilitate the use of pagination in the documentation, such as: `next_token`, `previous_token`, `max_results`, `max_results`.
 
 ### Request Structure
 
@@ -50,6 +43,8 @@ Documentation should clearly outline the structure of the API request when pagin
    - any additional filters or sorting options that can be applied to the request.
 
 In the [Spotify API documentation](https://developer.spotify.com/documentation/web-api/reference/get-multiple-artists), the request structure includes a comma-separated list of the Spotify IDs for the artists, with a maximum of 100 IDs.
+
+Documentation on [X Developer Platform](https://developer.x.com/en/docs/twitter-api/pagination) ...
 
 ...FOTO...
 
@@ -70,7 +65,7 @@ Documentation should list any potential errors or edge cases related to paginati
 
 ...FOTO...
 
-Example: [Google Books[(https://developers.google.com/books/docs/viewer/developers_guide)
+Example: [Google Books](https://developers.google.com/books/docs/viewer/developers_guide)
 
 <a id="Writing-Clear-Pagination-Instructions"></a>
 ## Writing Clear Pagination Instructions
