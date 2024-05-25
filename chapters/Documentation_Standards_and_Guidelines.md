@@ -68,19 +68,21 @@ Example: [Google Books[(https://developers.google.com/books/docs/viewer/develope
 <a id="Writing-Clear-Pagination-Instructions"></a>
 ## Writing Clear Pagination Instructions
 
-1. **Define Usage Patterns:** Documentation should explain how users should format API requests to paginate data effectively. It should provide examples of valid pagination requests using the supported parameters.
+### Define Usage Patterns
+
+Documentation should explain how users should format API requests to paginate data effectively. It should provide examples of valid pagination requests using the supported parameters.
 
 [Example from Stripe API](https://docs.stripe.com/api/pagination):
 
-`GET /v1/customers?limit=10&starting_after=cus_123456789`
+### Clarify Default Behavior
 
-2. **Clarify Default Behavior:** If the API has default pagination settings or behaviors, documentation should explain them explicitly. Users should understand what happens if they don't specify pagination parameters in their requests.
+If the API has default pagination settings or behaviors, documentation should explain them explicitly. Users should understand what happens if they don't specify pagination parameters in their requests.
 
 [Example from Mailchimp API]():LINK !!
 
-`By default, the Mailchimp API returns the first page of results with 10 items per page.`
+### Address Edge Cases
 
-3. **Address Edge Cases:** The documentation should anticipate common questions or confusion points related to pagination, such as navigating to specific pages or handling large datasets. Provide detailed instructions or troubleshooting tips to address these scenarios.
+The documentation should anticipate common questions or confusion points related to pagination, such as navigating to specific pages or handling large datasets. Provide detailed instructions or troubleshooting tips to address these scenarios.
 
 [Example from Google Books API](https://developers.google.com/books/docs/v1/using):
 
@@ -89,8 +91,14 @@ Example: [Google Books[(https://developers.google.com/books/docs/viewer/develope
 <a id="Providing-Usage-Examples"></a>
 ## Providing Usage Examples
 
-1. **Basic Examples:** The documentation should include simple, straightforward examples demonstrating how to paginate through data using the API. It should show how to retrieve the first page, navigate to the next page, and adjust pagination parameters.
+### Basic Examples
 
-2. **Advanced Examples:** The documentation should show more complex examples that showcase different pagination scenarios, such as sorting, filtering, or combining pagination with other query parameters.
+The documentation should include simple, straightforward examples demonstrating how to paginate through data using the API. It should show how to retrieve the first page, navigate to the next page, and adjust pagination parameters.
 
-3. **Sample Code Snippets:** The documentation should show code snippets in various programming languages illustrating how to integrate pagination into API requests. It should also include comments to explain each step and highlight key pagination parameters.
+### Advanced Examples
+
+The documentation should show more complex examples that showcase different pagination scenarios, such as sorting, filtering, or combining pagination with other query parameters.
+
+### Sample Code Snippets
+
+The documentation should show code snippets in various programming languages illustrating how to integrate pagination into API requests. It should also include comments to explain each step and highlight key pagination parameters.
