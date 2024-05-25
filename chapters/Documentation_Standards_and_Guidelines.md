@@ -14,47 +14,46 @@ Pagination is a crucial aspect of API documentation, and documenting it effectiv
 <a id="Documenting-Pagination-in-API-reference"></a>
 ## Documenting Pagination in API Reference
 
-1. **Introduction to Pagination:** Documentation should provide an overview of pagination and its importance in retrieving large datasets efficiently.
+**Introduction to Pagination:** Documentation should provide an overview of pagination and its importance in retrieving large datasets efficiently.
 
-2. **Pagination Parameters:** Documentation should describe the pagination parameters supported by the API, including:
+/worth noting that many documentations have general intros with not much space for pagination concept only. Pagination is usually just a small part of the entire introduction to the API documentation/
+
+...FOTO...
+
+Example: [Twitter API](https://developer.x.com/en/docs/twitter-api/pagination)
+
+**Pagination Parameters:** Documentation should describe the pagination parameters supported by the API, including:
    - `page`: specifying the page number to retrieve.
    - `limit`: specifying the maximum number of items per page.
    - additionally: any other parameters specific to the pagination style used, such as cursor values or keyset identifiers.
 
 [Example from GitHub API](https://docs.github.com/en/rest/using-the-rest-api/getting-started-with-the-rest-api?apiVersion=2022-11-28#pagination):
 
-`{
-  "page": 2,
-  "per_page": 10,
-  "since": "2023-01-01T00:00:00Z"
-}`
+...FOTO...
 
-3. **Response Structure:** Documentation should describe the structure of the API response when paginating data, including:
+**Request Structure:** Documentation should describe the structure of the API request when paginating data, including:
+- ...
+- ...
+- ...
+
+...FOTO...
+
+Example: [Spotify for Developers](https://developer.spotify.com/documentation/web-api/reference/get-multiple-artists)
+
+**Response Structure:** Documentation should describe the structure of the API response when paginating data, including:
    - total number of records available,
    - links or cursors for navigating to the next or previous pages,
    - representation of the current page of data.
 
-[Example from Twitter API](https://developer.x.com/en/docs/twitter-api/pagination):
+... FOTO...
 
-`{
-  "total_count": 100,
-  "next_cursor": "abcd1234",
-  "previous_cursor": "wxyz5678",
-  "items": [
-    // items for the current page
-  ]
-}`
+Example: [Spotify for Developers](https://developer.spotify.com/documentation/web-api/reference/get-multiple-artists)
 
 4. **Error Handling:** Documentation should list any potential errors or edge cases related to pagination, such as invalid pagination parameters or reaching the end of the dataset. It should also provide clear explanations and recommended actions for users to address these issues.
 
-[Example from Spotify API](https://developer.spotify.com/documentation/web-api/reference/get-users-top-artists-and-tracks):
+...FOTO...
 
-`{
-  "error": {
-    "status": 400,
-    "message": "Invalid limit value"
-  }
-}`
+Example: [Google Books[(https://developers.google.com/books/docs/viewer/developers_guide)
 
 <a id="Writing-Clear-Pagination-Instructions"></a>
 ## Writing Clear Pagination Instructions
