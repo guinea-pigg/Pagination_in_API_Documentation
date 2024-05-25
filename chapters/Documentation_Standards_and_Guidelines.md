@@ -49,9 +49,9 @@ Documentation should clearly outline the structure of the API request when pagin
    - the number of records to be returned per page (page size),
    - any additional filters or sorting options that can be applied to the request.
 
-...FOTO...
+In the [Spotify API documentation](https://developer.spotify.com/documentation/web-api/reference/get-multiple-artists), the request structure includes a comma-separated list of the Spotify IDs for the artists, with a maximum of 100 IDs.
 
-Example: [Spotify for Developers](https://developer.spotify.com/documentation/web-api/reference/get-multiple-artists)
+...FOTO...
 
 ### Response Structure
 
@@ -62,7 +62,7 @@ Documentation should describe the structure of the API response when paginating 
 
 ... FOTO...
 
-Example: [Spotify for Developers](https://developer.spotify.com/documentation/web-api/reference/get-multiple-artists)
+Example: [Spotify for Developers](https://developer.spotify.com/documentation/web-api/reference/get-multiple-artists) --> here spotify is not relevant, find a different case
 
 ### Error Handling
 
