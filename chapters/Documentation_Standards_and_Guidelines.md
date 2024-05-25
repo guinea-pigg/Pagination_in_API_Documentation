@@ -60,9 +60,7 @@ Because the API parameter `max_results` is set to 100 and there are approximatel
 - `end_time=2020-12-12T01:00:00Z`
 - `pagination_token=7140w`
 
-Documentation highlights that in order "to get the next page, take the `next_token value` directly from the response (`7140w`) and set it as the `pagination_token` for the next request call.
-
-tutaj screen Sequence - > Request Parameters
+Documentation highlights that in order "to get the next page, take the `next_token value` directly from the response (`7140w`) and set it as the `pagination_token` for the next request call."
 
 ### 4. Response Structure
 
@@ -71,17 +69,35 @@ Documentation should describe the structure of the API response when paginating 
    - links or cursors for navigating to the next or previous pages,
    - representation of the current page of data.
 
-... FOTO...
+Documentation at the [X Developer Platform](https://developer.x.com/en/docs/twitter-api/pagination) shows an exemplary response:
 
-Example: [Spotify for Developers](https://developer.spotify.com/documentation/web-api/reference/get-multiple-artists) --> here spotify is not relevant, find a different case
+`{
+  "data": [
+    {
+      "created_at": "2020-12-11T20:44:52.000Z",
+      "id": "1337498609819021312",
+      "text": "Thanks to everyone who tuned in today..."
+    },
+    .
+    .
+    .
+   {
+      "created_at": "2020-05-06T17:24:31.000Z",
+      "id": "1258085245091368960",
+      "text": "It’s now easier to understand Tweet impact..."
+    }
+  ],
+  "meta": {
+    "oldest_id": "1258085245091368960",
+    "newest_id": "1337498609819021312",
+    "result_count": 100,
+    "next_token": "7140w"
+  }
+}`
 
 ### 5. Error Handling
 
-Documentation should list any potential errors or edge cases related to pagination, such as invalid pagination parameters or reaching the end of the dataset. It should also provide clear explanations and recommended actions for users to address these issues.
-
-...FOTO...
-
-Example: [Google Books](https://developers.google.com/books/docs/viewer/developers_guide)
+Documentation can list any potential errors or edge cases related to pagination, such as invalid pagination parameters or reaching the end of the dataset. In practice, chapters dedicated to pagination in APIs rarely cover error handling specific to pagination. This topic is usually addressed in general troubleshooting sections.
 
 <a id="Writing-Clear-Pagination-Instructions"></a>
 ## Writing Clear Pagination Instructions
