@@ -28,7 +28,7 @@ An extensive chapter on pagination in APIs is available on the [X Developer Plat
 
 ### Pagination Parameters:
 
-Documentation should describe the pagination parameters supported by the API, including:
+Documentation should describe the pagination parameters supported by the API. Depending on a type of pagination, it can include:
    - `page`: specifying the page number to retrieve.
    - `limit`: specifying the maximum number of items per page.
    - additionally: any other parameters specific to the pagination style used, such as cursor values or keyset identifiers.
