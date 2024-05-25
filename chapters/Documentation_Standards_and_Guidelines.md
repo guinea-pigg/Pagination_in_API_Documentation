@@ -33,7 +33,7 @@ Documentation should describe the pagination parameters supported by the API, in
    - `limit`: specifying the maximum number of items per page.
    - additionally: any other parameters specific to the pagination style used, such as cursor values or keyset identifiers.
 
-An example showing this practice is documentation on [X Developer Platform](https://developer.x.com/en/docs/twitter-api/pagination). It lists different parameters that can facilitate the use of pagination in the documentation, such as: `next_token`, `previous_token`, `max_results`, `max_results`.
+An example showing this practice is documentation on [X Developer Platform](https://developer.x.com/en/docs/twitter-api/pagination). It lists different parameters that can facilitate the use of pagination in the documentation, such as: `next_token`, `previous_token`, `max_results`, `pagination_token`.
 
 ### Request Structure
 
@@ -42,11 +42,13 @@ Documentation should clearly outline the structure of the API request when pagin
    - the number of records to be returned per page (page size),
    - any additional filters or sorting options that can be applied to the request.
 
-In the [Spotify API documentation](https://developer.spotify.com/documentation/web-api/reference/get-multiple-artists), the request structure includes a comma-separated list of the Spotify IDs for the artists, with a maximum of 100 IDs.
+Documentation on [X Developer Platform](https://developer.x.com/en/docs/twitter-api/pagination) shows an exemplary request and the sequence of further requests that retrieves the next pages of data. 
 
-Documentation on [X Developer Platform](https://developer.x.com/en/docs/twitter-api/pagination) ...
+Documentation shows an example of the initial request:
 
-...FOTO...
+`https://api.twitter.com/2/users/2244994945/tweets?tweet.fields=created_at&max_results=100&start_time=2019-01-01T17:00:00Z&end_time=2020-12-12T01:00:00Z`
+
+tutaj screen Sequence - > Request Parameters
 
 ### Response Structure
 
