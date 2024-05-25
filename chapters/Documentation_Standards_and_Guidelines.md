@@ -20,6 +20,12 @@ Documentation should provide an overview of pagination and its importance in ret
 
 It is worth noting that many API documentations have general introductions with limited space for the pagination concept. Pagination is usually just a small part of the overall API documentation introduction.
 
+An extensive chapter on pagination in APIs is available on the X Developer Platform. The chapter, titled "Pagination," includes:
+- Use cases for pagination
+- Pagination token definitions
+- Fundamentals of pagination
+- Pagination examples
+
 ...FOTO...
 
 Example: [Twitter API](https://developer.x.com/en/docs/twitter-api/pagination)
