@@ -20,7 +20,7 @@ It is worth noting that numerous API documentations have general introductions w
 
 Documentation has to provide an overview of pagination and its importance in retrieving large datasets efficiently.
 
-A chapter on pagination in API is available on the [X Developer Platform](https://developer.x.com/en/docs/twitter-api/pagination). The chapter, titled *Pagination*, includes:
+A chapter on pagination in API is available at the [X Developer Platform](https://developer.x.com/en/docs/twitter-api/pagination). The chapter, titled *Pagination*, includes:
 - use cases for pagination,
 - pagination token definitions,
 - fundamentals of pagination,
@@ -37,7 +37,7 @@ Documentation should describe the pagination parameters supported by the API. De
    - `limit`: specifying the maximum number of items per page,
    - additionally: any other parameters specific to the pagination style used, such as cursor values or keyset identifiers.
 
-An example showing this practice is documentation at [X Developer Platform](https://developer.x.com/en/docs/twitter-api/pagination). It lists different parameters that facilitate the use of pagination in the documentation, such as: `next_token`, `previous_token`, `max_results`, `pagination_token`.
+An example showing this practice is documentation at the [X Developer Platform](https://developer.x.com/en/docs/twitter-api/pagination). It lists different parameters that facilitate the use of pagination in the documentation, such as: `next_token`, `previous_token`, `max_results`, `pagination_token`.
 
 ### 3. Request Structure
 
@@ -46,11 +46,13 @@ Documentation should clearly outline the structure of the API request when pagin
    - the number of records to be returned per page (page size),
    - any additional filters or sorting options that can be applied to the request.
 
-Documentation on [X Developer Platform](https://developer.x.com/en/docs/twitter-api/pagination) shows an exemplary request and the sequence of further requests that retrieves the next pages of data. 
+Documentation at the [X Developer Platform](https://developer.x.com/en/docs/twitter-api/pagination) shows an exemplary request and the sequence of further requests that retrieves the next pages of data. 
 
-The initial request:
+The initial request specifies a user ID (`2244994945`) and the time period for obtaining the results, from January 1, 2019, at 17:00:00 UTC to December 12, 2019, at 00:00:00 UTC.
 
 `https://api.twitter.com/2/users/2244994945/tweets?tweet.fields=created_at&max_results=100&start_time=2019-01-01T17:00:00Z&end_time=2020-12-12T01:00:00Z`
+
+Because the API parameter `max_results` is set to 100 and there are approximately 295 posts created by user ID 2244994945, the results are spread across three pages.
 
 tutaj screen Sequence - > Request Parameters
 
