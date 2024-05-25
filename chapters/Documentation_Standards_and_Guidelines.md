@@ -22,7 +22,7 @@ It is worth noting that many API documentations have general introductions with 
 
 Example: [Twitter API](https://developer.x.com/en/docs/twitter-api/pagination)
 
-###Pagination Parameters:
+### Pagination Parameters:
 
 Documentation should describe the pagination parameters supported by the API, including:
    - `page`: specifying the page number to retrieve.
