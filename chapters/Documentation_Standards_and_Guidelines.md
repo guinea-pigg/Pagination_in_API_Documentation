@@ -35,7 +35,9 @@ Documentation should describe the pagination parameters supported by the API. De
    - `limit`: specifying the maximum number of items per page,
    - additionally: any other parameters specific to the pagination style used, such as cursor values or keyset identifiers.
 
-An example showing this practice is documentation at the [X Developer Platform](https://developer.x.com/en/docs/twitter-api/pagination). It lists different parameters that facilitate the use of pagination in the documentation, such as: `next_token`, `previous_token`, `max_results`, `pagination_token`.
+An example showing this practice is documentation at the [X Developer Platform](https://developer.x.com/en/docs/twitter-api/pagination). It lists different parameters that facilitate the use of pagination in the documentation, such as: `next_token`, `previous_token`, `max_results`, `pagination_token`. In X's API `pagination_token` is a different name for `offset`, making it a typical example of offset-based API. 
+
+To know more about offset-based API, go to chapter titled Pagination Styles and Patterns.
 
 ### 3. Request Structure
 
