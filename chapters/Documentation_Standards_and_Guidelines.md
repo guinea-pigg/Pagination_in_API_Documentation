@@ -26,9 +26,7 @@ A chapter on pagination in API is available at the [X Developer Platform](https:
 - fundamentals of pagination,
 - pagination examples.
 
-The chapter covers all aspects of managing pagination for developers using X's API, beginning from short explanation what pagination is: 
-
-*Pagination is a feature in X API v2 endpoints that return more results than can be returned in a single response. When that happens, the data is returned in a series of 'pages'. Pagination refers to methods for programatically requesting all of the pages, in order to retrieve the entire result data set.*
+The chapter covers all aspects of managing pagination for developers using X's API, beginning from short explanation what pagination is.
 
 ### 2. Pagination Parameters
 
