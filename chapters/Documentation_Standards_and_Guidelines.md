@@ -14,7 +14,9 @@ Pagination is a crucial aspect of API documentation, and documenting it effectiv
 <a id="Documenting-Pagination-in-API-reference"></a>
 ## Documenting Pagination in API Reference
 
-**Introduction to Pagination:** Documentation should provide an overview of pagination and its importance in retrieving large datasets efficiently.
+### Introduction to Pagination: 
+
+Documentation should provide an overview of pagination and its importance in retrieving large datasets efficiently.
 
 It is worth noting that many API documentations have general introductions with limited space for the pagination concept. Pagination is usually just a small part of the overall API documentation introduction.
 
@@ -33,7 +35,9 @@ Documentation should describe the pagination parameters supported by the API, in
 
 ...FOTO...
 
-**Request Structure:** Documentation should clearly outline the structure of the API request when paginating data, including:
+### Request Structure
+
+Documentation should clearly outline the structure of the API request when paginating data, including:
    - parameters for specifying the page number or cursor,
    - the number of records to be returned per page (page size),
    - any additional filters or sorting options that can be applied to the request.
@@ -42,7 +46,9 @@ Documentation should describe the pagination parameters supported by the API, in
 
 Example: [Spotify for Developers](https://developer.spotify.com/documentation/web-api/reference/get-multiple-artists)
 
-**Response Structure:** Documentation should describe the structure of the API response when paginating data, including:
+### Response Structure
+
+Documentation should describe the structure of the API response when paginating data, including:
    - total number of records available,
    - links or cursors for navigating to the next or previous pages,
    - representation of the current page of data.
@@ -51,7 +57,9 @@ Example: [Spotify for Developers](https://developer.spotify.com/documentation/we
 
 Example: [Spotify for Developers](https://developer.spotify.com/documentation/web-api/reference/get-multiple-artists)
 
-4. **Error Handling:** Documentation should list any potential errors or edge cases related to pagination, such as invalid pagination parameters or reaching the end of the dataset. It should also provide clear explanations and recommended actions for users to address these issues.
+### Error Handling
+
+Documentation should list any potential errors or edge cases related to pagination, such as invalid pagination parameters or reaching the end of the dataset. It should also provide clear explanations and recommended actions for users to address these issues.
 
 ...FOTO...
 
