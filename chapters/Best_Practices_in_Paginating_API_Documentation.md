@@ -11,6 +11,12 @@ While implementing pagination in API documents, it is worth remembering about th
 - [handling large datasets efficiently](#Handling-Large_Datasets),
 - [providing consistent pagination parameters](#Providing-Consistent-Pagination-Parameters).
 
+### Why technical writers need to know this?
+
+- Familiarity with best practices in pagination helps writers guide users towards optimal data retrieval methods that enhance performance, adhere to industry standards, and ensure robust error handling.
+- Knowledge of pagination vocabulary allows technical writers to create documentation that makes it easier for developers to use the API efficiently, providing practical examples and covering common pitfalls.
+- Understanding pagination ensures technical writers can provide precise, clear, and consistent instructions, reducing ambiguity and helping developers implement APIs correctly.
+
 <a id="Choosing-a-Proper-Pagination-Style"></a>
 ## Choosing a Proper Pagination Style
 
