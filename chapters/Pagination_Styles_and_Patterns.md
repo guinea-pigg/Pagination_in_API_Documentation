@@ -13,6 +13,10 @@ There are some common pagination styles, among which we can find:
 - [Keyset-based pagination](#Keyset-Based-Pagination),
 - [Page-based pagination](#Page-Based-Pagination).
 
+### Why technical writers need to know this? 
+
+Technical writers should be familiar with different pagination styles and patterns because they are fundamental elements that shape the future of API documentation related to pagination. In other words, styles and patterns determine the vocabulary and logic of the documentation.
+
 ## Offset-Based Pagination <a id="Offset-Based-Pagination"></a>
 
 Offset-based pagination is one of the most common pagination styles. It is used when a client wants to retrieve a specific number of records from an API.
