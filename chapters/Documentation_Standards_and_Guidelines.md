@@ -11,20 +11,24 @@ Pagination is a crucial aspect of API documentation, and documenting it effectiv
    - [writing clear pagination instructions](#Writing-Clear-Pagination-Instructions),
    - [providing usage examples](#Providing-Usage-Examples).
 
+It is worth noting that numerous API documentations have general introductions with limited space for the pagination concept. Pagination is usually just a small part of the overall API documentation introduction. In case of API that handles small loads of data, pagination is frequently not applied.
+
 <a id="Documenting-Pagination-in-API-reference"></a>
 ## Documenting Pagination in API Reference
 
 ### 1. Introduction to Pagination 
 
-Documentation should provide an overview of pagination and its importance in retrieving large datasets efficiently.
+Documentation has to provide an overview of pagination and its importance in retrieving large datasets efficiently.
 
-It is worth noting that many API documentations have general introductions with limited space for the pagination concept. Pagination is usually just a small part of the overall API documentation introduction. In case of API that doesn't handle big loads of data, the concept of pagination is absent.
-
-An extensive chapter on pagination in API is available on the [X Developer Platform](https://developer.x.com/en/docs/twitter-api/pagination). The chapter, titled *Pagination*, includes:
+A chapter on pagination in API is available on the [X Developer Platform](https://developer.x.com/en/docs/twitter-api/pagination). The chapter, titled *Pagination*, includes:
 - use cases for pagination,
 - pagination token definitions,
 - fundamentals of pagination,
 - pagination examples.
+
+The chapter covers all aspects of managing pagination for developers using X's API, beginning from short explanation what pagination is: 
+
+*Pagination is a feature in X API v2 endpoints that return more results than can be returned in a single response. When that happens, the data is returned in a series of 'pages'. Pagination refers to methods for programatically requesting all of the pages, in order to retrieve the entire result data set.*
 
 ### 2. Pagination Parameters
 
