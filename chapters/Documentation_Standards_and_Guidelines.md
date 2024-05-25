@@ -95,10 +95,16 @@ The documentation should anticipate common questions or confusion points related
 
 The documentation should include simple, straightforward examples demonstrating how to paginate through data using the API. It should show how to retrieve the first page, navigate to the next page, and adjust pagination parameters.
 
+[Twitter](https://developer.x.com/en/docs/twitter-api/pagination)
+
 ### Advanced Examples
 
 The documentation should show more complex examples that showcase different pagination scenarios, such as sorting, filtering, or combining pagination with other query parameters.
 
+[YouTube](https://developers.google.com/youtube/v3/guides/implementation/pagination?hl=en)
+
 ### Sample Code Snippets
 
 The documentation should show code snippets in various programming languages illustrating how to integrate pagination into API requests. It should also include comments to explain each step and highlight key pagination parameters.
+
+[YouTube](https://developers.google.com/youtube/v3/code_samples/code_snippets)
