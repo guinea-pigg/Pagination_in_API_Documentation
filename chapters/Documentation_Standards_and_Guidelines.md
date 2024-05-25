@@ -16,13 +16,15 @@ Pagination is a crucial aspect of API documentation, and documenting it effectiv
 
 **Introduction to Pagination:** Documentation should provide an overview of pagination and its importance in retrieving large datasets efficiently.
 
-/worth noting that many documentations have general intros with not much space for pagination concept only. Pagination is usually just a small part of the entire introduction to the API documentation/
+It is worth noting that many API documentations have general introductions with limited space for the pagination concept. Pagination is usually just a small part of the overall API documentation introduction.
 
 ...FOTO...
 
 Example: [Twitter API](https://developer.x.com/en/docs/twitter-api/pagination)
 
-**Pagination Parameters:** Documentation should describe the pagination parameters supported by the API, including:
+###Pagination Parameters:
+
+Documentation should describe the pagination parameters supported by the API, including:
    - `page`: specifying the page number to retrieve.
    - `limit`: specifying the maximum number of items per page.
    - additionally: any other parameters specific to the pagination style used, such as cursor values or keyset identifiers.
@@ -31,10 +33,10 @@ Example: [Twitter API](https://developer.x.com/en/docs/twitter-api/pagination)
 
 ...FOTO...
 
-**Request Structure:** Documentation should describe the structure of the API request when paginating data, including:
-- ...
-- ...
-- ...
+**Request Structure:** Documentation should clearly outline the structure of the API request when paginating data, including:
+   - parameters for specifying the page number or cursor,
+   - the number of records to be returned per page (page size),
+   - any additional filters or sorting options that can be applied to the request.
 
 ...FOTO...
 
