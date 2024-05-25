@@ -43,12 +43,12 @@ This request would retrieve the first page of users with a limit of 10 users per
 ## Programming Languages in which the Pagination is Implemented:
 
 Technical writers should remember that pagination can be implemented in API documentation in several ways: 
-- Python (using requests library)
-- JavaScript (using fetch API)
-- Java (using HttpURLConnection)
+- Python (using requests library),
+- JavaScript (using fetch API),
+- Java (using HttpURLConnection).
 
 A good technical writer doesn't have to be able to code in different programming languages. At the same time, though, understanding how to implement pagination in Python, JavaScript, and Java is crucial for a technical writer because it allows them to:
 
-- Provide relevant and accurate examples
-- Ensure the documentation is usable by developers of different backgrounds
-- Build trust and credibility with the audience
+- Provide relevant and accurate examples,
+- Ensure the documentation is usable by developers of different backgrounds,
+- Build trust and credibility with the audience.
