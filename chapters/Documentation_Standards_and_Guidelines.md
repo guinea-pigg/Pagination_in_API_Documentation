@@ -117,13 +117,13 @@ Documentation can list any potential errors or edge cases related to pagination,
 
 ### 1. Basic Examples
 
-The documentation should include simple, straightforward examples demonstrating how to paginate through data using the API. It should show how to retrieve the first page, navigate to the next page, and adjust pagination parameters.
+The documentation should include simple examples demonstrating how to paginate through data using the API. It should show how to retrieve the first page, navigate to the next page, and adjust pagination parameters.
 
 Documentation at the [X Developer Platform](https://developer.x.com/en/docs/twitter-api/pagination) shows simple examples on [pagination parameters](#Pagination-Parameters), [request structure](#Request-Structure), or [response structure](#Response-Structure). 
 
 ### 2. Advanced Examples
 
-The documentation should show more complex examples that showcase different pagination scenarios, such as sorting, filtering, or combining pagination with other query parameters.
+The documentation should show more complex examples that explain different pagination scenarios, such as sorting, filtering, or combining pagination with other query parameters.
 
 Documentation on [YouTube API](https://developers.google.com/youtube/v3/guides/implementation/pagination?hl=en) explains how to retrieve additional sets of results for YouTube Data API queries, explaining additional parameters (e.g. `nextPageToken`, `prevPageToken`), and giving exemplary queries.
 
