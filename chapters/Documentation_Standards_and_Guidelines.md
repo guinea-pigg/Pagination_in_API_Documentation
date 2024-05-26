@@ -11,7 +11,7 @@ Pagination is a crucial aspect of API documentation, and documenting it effectiv
    - [writing clear pagination instructions](#Writing-Clear-Pagination-Instructions),
    - [providing usage examples](#Providing-Usage-Examples).
 
-It is worth noting that numerous API documentations have general introductions with limited space for the pagination concept. Pagination is usually just a small part of the overall API documentation introduction. In case of API that handles small loads of data, pagination is frequently not applied.
+It is worth noting that numerous API documentations have general introductions with limited space for the pagination concept. The content described in documentation heavily depends on the API's structure and logic. Pagination is usually just a small part of the overall API documentation introduction. In case of API that handles small loads of data, pagination is frequently not applied.
 
 <a id="Documenting-Pagination-in-API-reference"></a>
 ## Documenting Pagination in API Reference
@@ -20,13 +20,13 @@ It is worth noting that numerous API documentations have general introductions w
 
 Documentation has to provide an overview of pagination and its importance in retrieving large datasets efficiently.
 
-A chapter on pagination in API is available at the [X Developer Platform](https://developer.x.com/en/docs/twitter-api/pagination). The chapter, titled *Pagination*, includes:
+A chapter on pagination in API is available at the [X Developer Platform](https://developer.x.com/en/docs/twitter-api/pagination). The chapter includes:
 - use cases for pagination,
 - pagination token definitions,
 - fundamentals of pagination,
 - pagination examples.
 
-The chapter covers all aspects of managing pagination for developers using X's API, beginning from short explanation what pagination is.
+The chapter covers all aspects of managing pagination for developers using X's API, beginning from short explanation what pagination is. 
 
 ### 2. Pagination Parameters
 
@@ -37,7 +37,7 @@ Documentation should describe the pagination parameters supported by the API. De
 
 An example showing this practice is documentation at the [X Developer Platform](https://developer.x.com/en/docs/twitter-api/pagination). It lists different parameters that facilitate the use of pagination in the documentation, such as: `next_token`, `previous_token`, `max_results`, `pagination_token`. In X's API `pagination_token` is a different name for `offset`, making it a typical example of offset-based API. 
 
-To know more about offset-based API, go to chapter titled Pagination Styles and Patterns.
+To know more about offset-based API, go to chapter titled [Pagination Styles and Patterns](Pagination_Styles_and_Patterns.md).
 
 ### 3. Request Structure
 
@@ -52,7 +52,7 @@ The initial request specifies a user ID (`2244994945`) and the time period for o
 
 `https://api.twitter.com/2/users/2244994945/tweets?tweet.fields=created_at&max_results=100&start_time=2019-01-01T17:00:00Z&end_time=2020-12-12T01:00:00Z`
 
-Because the API parameter `max_results` is set to 100 and there are approximately 295 posts created by user ID `2244994945`, the results are spread across three pages. To get the second page of results, the request needs the following parameters:
+Because the API parameter `max_results` is set to 100 and there are approximately 295 posts created by user ID `2244994945`, the results are spread across more than one page. According to the explanation found in the API documentation, to get the second page of results, the request needs the following parameters:
 
 - `max_results=100`
 - `tweet.fields=created_at`
