@@ -8,8 +8,8 @@ nav_order: 6
 
 Pagination is a crucial aspect of API documentation, and documenting it effectively is essential for users to understand how to retrieve and navigate through paginated data. Standards and guidelines for documenting pagination in API reference documentation cover areas such as:
    - [documenting pagination in API reference](#Documenting-Pagination-in-API-reference),
-   - [writing clear pagination instructions](#Writing-Clear-Pagination-Instructions),
-   - [providing usage examples](#Providing-Usage-Examples).
+   - [providing usage examples](#Providing-Usage-Examples),
+   - [writing clear pagination instructions](#Writing-Clear-Pagination-Instructions).
 
 It is worth noting that numerous API documentations have general introductions with limited space for the pagination concept. The content described in documentation heavily depends on the API's structure and logic. Pagination is usually just a small part of the overall API documentation introduction. In case of API that handles small loads of data, pagination is frequently not applied.
 
@@ -99,6 +99,27 @@ Documentation at the [X Developer Platform](https://developer.x.com/en/docs/twit
 
 Documentation can list any potential errors or edge cases related to pagination, such as invalid pagination parameters or reaching the end of the dataset. In practice, chapters dedicated to pagination in APIs rarely cover error handling specific to pagination. This topic is usually addressed in general troubleshooting sections.
 
+<a id="Providing-Usage-Examples"></a>
+## Providing Usage Examples
+
+### 1. Basic Examples
+
+The documentation should include simple, straightforward examples demonstrating how to paginate through data using the API. It should show how to retrieve the first page, navigate to the next page, and adjust pagination parameters.
+
+Documentation at the [X Developer Platform](https://developer.x.com/en/docs/twitter-api/pagination) shows simple examples on pagination parameters, request structure, or response structure. 
+
+### 2. Advanced Examples
+
+The documentation should show more complex examples that showcase different pagination scenarios, such as sorting, filtering, or combining pagination with other query parameters.
+
+[YouTube](https://developers.google.com/youtube/v3/guides/implementation/pagination?hl=en)
+
+### 3. Sample Code Snippets
+
+The documentation should show code snippets in various programming languages illustrating how to integrate pagination into API requests. It should also include comments to explain each step and highlight key pagination parameters.
+
+[YouTube](https://developers.google.com/youtube/v3/code_samples/code_snippets)
+
 <a id="Writing-Clear-Pagination-Instructions"></a>
 ## Writing Clear Pagination Instructions
 
@@ -121,24 +142,3 @@ The documentation should anticipate common questions or confusion points related
 [Example from Google Books API](https://developers.google.com/books/docs/v1/using):
 
 `To navigate to a specific page, include the startIndex parameter in your request. If the specified index exceeds the total number of items, the API will return an empty list.`
-
-<a id="Providing-Usage-Examples"></a>
-## Providing Usage Examples
-
-### 1. Basic Examples
-
-The documentation should include simple, straightforward examples demonstrating how to paginate through data using the API. It should show how to retrieve the first page, navigate to the next page, and adjust pagination parameters.
-
-Documentation at the [X Developer Platform](https://developer.x.com/en/docs/twitter-api/pagination) shows simple examples on pagination parameters, request structure, or response structure. 
-
-### 2. Advanced Examples
-
-The documentation should show more complex examples that showcase different pagination scenarios, such as sorting, filtering, or combining pagination with other query parameters.
-
-[YouTube](https://developers.google.com/youtube/v3/guides/implementation/pagination?hl=en)
-
-### 3. Sample Code Snippets
-
-The documentation should show code snippets in various programming languages illustrating how to integrate pagination into API requests. It should also include comments to explain each step and highlight key pagination parameters.
-
-[YouTube](https://developers.google.com/youtube/v3/code_samples/code_snippets)
