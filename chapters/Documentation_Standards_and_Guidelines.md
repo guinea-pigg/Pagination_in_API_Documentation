@@ -129,21 +129,7 @@ The documentation should anticipate common questions or confusion points related
 
 The documentation should include simple, straightforward examples demonstrating how to paginate through data using the API. It should show how to retrieve the first page, navigate to the next page, and adjust pagination parameters.
 
-Documentation at the [X Developer Platform](https://developer.x.com/en/docs/twitter-api/pagination) shows an exemplary request and the sequence of further requests that retrieves the next pages of data. 
-
-The initial request specifies a user ID (`2244994945`) and the time period for obtaining the results, from January 1, 2019, at 17:00:00 UTC to December 12, 2019, at 00:00:00 UTC.
-
-`https://api.twitter.com/2/users/2244994945/tweets?tweet.fields=created_at&max_results=100&start_time=2019-01-01T17:00:00Z&end_time=2020-12-12T01:00:00Z`
-
-Because the API parameter `max_results` is set to 100 and there are approximately 295 posts created by user ID `2244994945`, the results are spread across more than one page. According to the explanation found in the API documentation, to get the second page of results, the request needs the following parameters:
-
-- `max_results=100`
-- `tweet.fields=created_at`
-- `start_time=2019-01-01T17:00:00Z`
-- `end_time=2020-12-12T01:00:00Z`
-- `pagination_token=7140w`
-
-Documentation highlights that in order "to get the next page, take the `next_token value` directly from the response (`7140w`) and set it as the `pagination_token` for the next request call."
+Documentation at the [X Developer Platform](https://developer.x.com/en/docs/twitter-api/pagination) shows simple examples on pagination parameters, request structure, or response structure. 
 
 ### 2. Advanced Examples
 
