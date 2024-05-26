@@ -144,11 +144,11 @@ In practice, code snippets are most often shown in a separate chapter that is no
 
 Documentation should explain how users should format API requests to paginate data effectively. It should provide examples of valid pagination requests using the supported parameters.
 
-[Stripe API](https://docs.stripe.com/api/pagination) documentation includes a separate chapter on pagination, explaining how to use cursor-based pagination with specific parameters (`starting_after` and `ending_before`). It also provides a sample response in a window next to the explanation.
+[Stripe API](https://docs.stripe.com/api/pagination) documentation includes a separate chapter on pagination, explaining how to use [cursor-based pagination]() with specific parameters (`starting_after` and `ending_before`). It also provides a sample response in a window next to the explanation.
 
 ### 2. Clarify Default Behavior
 
-If the API has default pagination settings or behaviors, documentation should explain them explicitly. Users should understand what happens if they don't specify pagination parameters in their requests.
+If the API has default pagination settings or behaviors, documentation should explain them explicitly, like in [Stripe API](https://docs.stripe.com/api/pagination) documentation (cursor-based pagination)
 
 [Example from Mailchimp API]():LINK !!
 
