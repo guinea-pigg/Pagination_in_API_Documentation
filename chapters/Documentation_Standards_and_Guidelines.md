@@ -146,14 +146,12 @@ Documentation should explain how users should format API requests to paginate da
 
 ### 2. Clarify Default Behavior
 
-If the API has default pagination settings or behaviors, documentation should explain them explicitly, like in [Stripe API](https://docs.stripe.com/api/pagination) documentation (cursor-based pagination)
-
-[Example from Mailchimp API]():LINK !!
+If the API has default pagination settings or behaviors, documentation should explain them explicitly, like in [Stripe API](https://docs.stripe.com/api/pagination) documentation ([cursor-based pagination]((#Pagination_Styles_and_Patterns.md))) or [X Developer Platform](https://developer.x.com/en/docs/twitter-api/pagination) documentation ([offset-based pagination](#Pagination_Styles_and_Patterns.md)).
 
 ### 3. Address Edge Cases
 
-The documentation should anticipate common questions or confusion points related to pagination, such as navigating to specific pages or handling large datasets. Provide detailed instructions or troubleshooting tips to address these scenarios.
+The documentation should anticipate common questions or confusion points related to pagination, such as navigating to specific pages or handling large datasets.
 
-[Example from Google Books API](https://developers.google.com/books/docs/v1/using):
+Such instructions are provided in [Google Books API documentation](https://developers.google.com/books/docs/v1/using):  
 
 `To navigate to a specific page, include the startIndex parameter in your request. If the specified index exceeds the total number of items, the API will return an empty list.`
