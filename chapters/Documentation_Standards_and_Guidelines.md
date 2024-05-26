@@ -121,7 +121,7 @@ The documentation should include simple examples demonstrating how to paginate t
 
 Documentation at the [X Developer Platform](https://developer.x.com/en/docs/twitter-api/pagination) shows simple examples on [pagination parameters](#Pagination-Parameters), [request structure](#Request-Structure), or [response structure](#Response-Structure). 
 
-[Stripe API documentation]([https://docs.stripe.com/api/disputes](https://docs.stripe.com/api/pagination)) is another source that provides users with basic examples of possibilities given in the API, i.e. how to list charges, invoices or customers. 
+[Stripe API documentation](https://docs.stripe.com/api/disputes](https://docs.stripe.com/api/pagination) is another source that provides users with basic examples of possibilities given in the API, i.e. how to list charges, invoices or customers. 
 
 ### 2. Advanced Examples
 
