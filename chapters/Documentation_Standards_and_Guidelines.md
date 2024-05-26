@@ -27,7 +27,7 @@ A chapter on pagination in API is available at the [X Developer Platform](https:
 - pagination examples.
 
 The chapter covers all aspects of managing pagination for developers using X's API, beginning from short explanation what pagination is. 
-
+<a id="Pagination-Parameters"></a>
 ### 2. Pagination Parameters
 
 Documentation should describe the pagination parameters supported by the API. Depending on a type of pagination, it can include:
@@ -38,7 +38,7 @@ Documentation should describe the pagination parameters supported by the API. De
 An example showing this practice is documentation at the [X Developer Platform](https://developer.x.com/en/docs/twitter-api/pagination). It lists different parameters that facilitate the use of pagination in the documentation, such as: `next_token`, `previous_token`, `max_results`, `pagination_token`. In X's API `pagination_token` is a different name for `offset`, making it a typical example of offset-based API. 
 
 To know more about offset-based API, go to chapter titled [Pagination Styles and Patterns](Pagination_Styles_and_Patterns.md).
-
+<a id="Request-Structure"></a>
 ### 3. Request Structure
 
 Documentation should clearly outline the structure of the API request when paginating data. It can include elements such as:
@@ -61,7 +61,7 @@ Because the API parameter `max_results` is set to 100 and there are approximatel
 - `pagination_token=7140w`
 
 Documentation highlights that in order "to get the next page, take the `next_token value` directly from the response (`7140w`) and set it as the `pagination_token` for the next request call."
-
+<a id="Response-Structure"></a>
 ### 4. Response Structure
 
 Documentation should describe the structure of the API response when paginating data. It can include elements such as:
@@ -119,7 +119,7 @@ Documentation can list any potential errors or edge cases related to pagination,
 
 The documentation should include simple, straightforward examples demonstrating how to paginate through data using the API. It should show how to retrieve the first page, navigate to the next page, and adjust pagination parameters.
 
-Documentation at the [X Developer Platform](https://developer.x.com/en/docs/twitter-api/pagination) shows simple examples on pagination parameters, request structure, or response structure. 
+Documentation at the [X Developer Platform](https://developer.x.com/en/docs/twitter-api/pagination) shows simple examples on [pagination parameters](#Pagination-Parameters), [request structure](#Request-Structure), or [response structure](#Response-Structure). 
 
 ### 2. Advanced Examples
 
