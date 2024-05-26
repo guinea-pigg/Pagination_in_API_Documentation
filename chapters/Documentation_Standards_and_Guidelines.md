@@ -123,7 +123,7 @@ The documentation should include simple examples demonstrating how to paginate t
 
 Documentation at the [X Developer Platform](https://developer.x.com/en/docs/twitter-api/pagination) shows simple examples on [pagination parameters](#Pagination-Parameters), [request structure](#Request-Structure), or [response structure](#Response-Structure). 
 
-[Stripe API documentation](https://docs.stripe.com/api/disputes) is another example 
+[Stripe API documentation](https://docs.stripe.com/api/disputes) is another source that provides users with basic examples of possibilities given in the API. 
 
 ### 2. Advanced Examples
 
@@ -135,7 +135,7 @@ Documentation on [YouTube API](https://developers.google.com/youtube/v3/guides/i
 
 The documentation should show code snippets in various programming languages illustrating how to integrate pagination into API requests. It should also include comments to explain each step and highlight key pagination parameters. 
 
-In practice, code snippets are most often shown in a separate chapter that is not dedicated exclusively to pagination but generic use of API. Here an example can be documentation on [YouTube API](https://developers.google.com/youtube/v3/code_samples/code_snippets).
+In practice, code snippets are often included in a general chapter on API usage rather than in a chapter dedicated solely to pagination. For example, this approach is used in the [YouTube API](https://developers.google.com/youtube/v3/code_samples/code_snippets) documentation.
 
 <a id="Writing-Clear-Pagination-Instructions"></a>
 ## Writing Clear Pagination Instructions
