@@ -125,13 +125,13 @@ Documentation at the [X Developer Platform](https://developer.x.com/en/docs/twit
 
 The documentation should show more complex examples that showcase different pagination scenarios, such as sorting, filtering, or combining pagination with other query parameters.
 
-[YouTube](https://developers.google.com/youtube/v3/guides/implementation/pagination?hl=en)
+Documentation on [YouTube API](https://developers.google.com/youtube/v3/guides/implementation/pagination?hl=en) explains how to retrieve additional sets of results for YouTube Data API queries, explaining additional parameters (e.g. `nextPageToken`, `prevPageToken`), and giving exemplary queries.
 
 ### 3. Sample Code Snippets
 
-The documentation should show code snippets in various programming languages illustrating how to integrate pagination into API requests. It should also include comments to explain each step and highlight key pagination parameters.
+The documentation should show code snippets in various programming languages illustrating how to integrate pagination into API requests. It should also include comments to explain each step and highlight key pagination parameters. 
 
-[YouTube](https://developers.google.com/youtube/v3/code_samples/code_snippets)
+In practice, code snippets are most often shown in a separate chapter that is not dedicated exclusively to pagination but generic use of API. Here an example can be documentation on [YouTube API](https://developers.google.com/youtube/v3/code_samples/code_snippets).
 
 <a id="Writing-Clear-Pagination-Instructions"></a>
 ## Writing Clear Pagination Instructions
