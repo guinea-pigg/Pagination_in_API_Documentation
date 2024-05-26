@@ -110,9 +110,7 @@ A part of the response called `meta` provides extra information about the data:
 
 ### 5. Error Handling
 
-Documentation can list any potential errors or edge cases related to pagination, such as invalid pagination parameters or reaching the end of the dataset. In practice, chapters dedicated to pagination in APIs rarely cover error handling specific to pagination. This topic is usually addressed in general troubleshooting sections.
-
-https://docs.stripe.com/api/errors/handling
+Documentation can list any potential errors or edge cases related to pagination, such as invalid pagination parameters or reaching the end of the dataset. In practice, chapters dedicated to pagination in APIs rarely cover error handling specific to pagination. This topic is usually addressed in general troubleshooting sections, like in [Stripe API documentation](https://docs.stripe.com/api/errors/handling).
 
 <a id="Providing-Usage-Examples"></a>
 ## Providing Usage Examples
