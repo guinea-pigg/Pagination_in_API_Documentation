@@ -154,4 +154,4 @@ The documentation should anticipate common questions or confusion points related
 
 Such instructions are provided in [Google Books API documentation](https://developers.google.com/books/docs/v1/using):  
 
-`To navigate to a specific page, include the startIndex parameter in your request. If the specified index exceeds the total number of items, the API will return an empty list.`
+"To navigate to a specific page, include the `startIndex` parameter in your request. If the specified index exceeds the total number of items, the API will return an empty list."
