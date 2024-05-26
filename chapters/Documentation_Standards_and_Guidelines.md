@@ -95,6 +95,19 @@ Documentation at the [X Developer Platform](https://developer.x.com/en/docs/twit
   }
 }`
 
+What's interesting, X's documentation on API doesn't explain each part of the response. 
+
+A part of the response called `data` contains an array of posts. Each post has:
+  - `created_at`: explaining when the post was made,
+  - `id`: a unique identifier for the post,
+  - `text`: the content of the post.
+
+A part of the response called `meta` provides extra information about the data:
+  - `oldest_id`: the ID of the oldest post in this set,
+  - `newest_id`: the ID of the newest post in this set,
+  - `result_count`: the number of posts in this response (100),
+  - `next_token`: a token to get the next set of results.
+
 ### 5. Error Handling
 
 Documentation can list any potential errors or edge cases related to pagination, such as invalid pagination parameters or reaching the end of the dataset. In practice, chapters dedicated to pagination in APIs rarely cover error handling specific to pagination. This topic is usually addressed in general troubleshooting sections.
