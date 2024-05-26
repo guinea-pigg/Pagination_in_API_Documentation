@@ -146,7 +146,7 @@ Documentation should explain how users should format API requests to paginate da
 
 ### 2. Clarify Default Behavior
 
-If the API has default pagination settings or behaviors, documentation should explain them explicitly, like in [Stripe API](https://docs.stripe.com/api/pagination) documentation ([cursor-based pagination]((Pagination_Styles_and_Patterns))) or [X Developer Platform](https://developer.x.com/en/docs/twitter-api/pagination) documentation ([offset-based pagination](Pagination_Styles_and_Patterns)).
+If the API has default pagination settings or behaviors, documentation should explain them explicitly, like in [Stripe API](https://docs.stripe.com/api/pagination) documentation ([cursor-based pagination](Pagination_Styles_and_Patterns)) or [X Developer Platform](https://developer.x.com/en/docs/twitter-api/pagination) documentation ([offset-based pagination](Pagination_Styles_and_Patterns)).
 
 ### 3. Address Edge Cases
 
