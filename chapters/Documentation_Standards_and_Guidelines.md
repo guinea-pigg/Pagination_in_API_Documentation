@@ -37,7 +37,7 @@ Documentation should describe the pagination parameters supported by the API. De
 
 An example showing this practice is documentation at the [X Developer Platform](https://developer.x.com/en/docs/twitter-api/pagination). It lists different parameters that facilitate the use of pagination in the documentation, such as: `next_token`, `previous_token`, `max_results`, `pagination_token`. In X's API `pagination_token` is a different name for `offset`, making it a typical example of offset-based API. 
 
-To know more about offset-based API, go to chapter titled [Pagination Styles and Patterns](Pagination_Styles_and_Patterns.md).
+To know more about offset-based API, go to chapter titled [Pagination Styles and Patterns](Pagination_Styles_and_Patterns).
 <a id="Request-Structure"></a>
 ### 3. Request Structure
 
@@ -142,11 +142,11 @@ In practice, code snippets are often included in a general chapter on API usage 
 
 Documentation should explain how users should format API requests to paginate data effectively. It should provide examples of valid pagination requests using the supported parameters.
 
-[Stripe API](https://docs.stripe.com/api/pagination) documentation explains how to use [cursor-based pagination](#Pagination_Styles_and_Patterns.md) with specific parameters (`starting_after` and `ending_before`). It also provides a sample response in a window next to the explanation.
+[Stripe API](https://docs.stripe.com/api/pagination) documentation explains how to use [cursor-based pagination](Pagination_Styles_and_Patterns) with specific parameters (`starting_after` and `ending_before`). It also provides a sample response in a window next to the explanation.
 
 ### 2. Clarify Default Behavior
 
-If the API has default pagination settings or behaviors, documentation should explain them explicitly, like in [Stripe API](https://docs.stripe.com/api/pagination) documentation ([cursor-based pagination]((#Pagination_Styles_and_Patterns.md))) or [X Developer Platform](https://developer.x.com/en/docs/twitter-api/pagination) documentation ([offset-based pagination](#Pagination_Styles_and_Patterns.md)).
+If the API has default pagination settings or behaviors, documentation should explain them explicitly, like in [Stripe API](https://docs.stripe.com/api/pagination) documentation ([cursor-based pagination]((Pagination_Styles_and_Patterns))) or [X Developer Platform](https://developer.x.com/en/docs/twitter-api/pagination) documentation ([offset-based pagination](Pagination_Styles_and_Patterns)).
 
 ### 3. Address Edge Cases
 
