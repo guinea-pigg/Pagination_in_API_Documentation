@@ -127,7 +127,7 @@ Documentation at the [X Developer Platform](https://developer.x.com/en/docs/twit
 
 The documentation should show more complex examples that explain different pagination scenarios, such as sorting, filtering, or combining pagination with other query parameters.
 
-Documentation on [YouTube API](https://developers.google.com/youtube/v3/guides/implementation/pagination?hl=en) explains how to retrieve additional sets of results for YouTube Data API queries, explaining additional parameters (e.g. `nextPageToken`, `prevPageToken`), and giving exemplary queries.
+Documentation on [YouTube API](https://developers.google.com/youtube/v3/guides/implementation/pagination?hl=en) shows how to retrieve additional sets of results for YouTube Data API queries, explaining additional parameters (e.g. `nextPageToken`, `prevPageToken`), and giving exemplary queries.
 
 ### 3. Sample Code Snippets
 
