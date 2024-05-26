@@ -112,6 +112,8 @@ A part of the response called `meta` provides extra information about the data:
 
 Documentation can list any potential errors or edge cases related to pagination, such as invalid pagination parameters or reaching the end of the dataset. In practice, chapters dedicated to pagination in APIs rarely cover error handling specific to pagination. This topic is usually addressed in general troubleshooting sections.
 
+https://docs.stripe.com/api/errors/handling
+
 <a id="Providing-Usage-Examples"></a>
 ## Providing Usage Examples
 
@@ -120,6 +122,8 @@ Documentation can list any potential errors or edge cases related to pagination,
 The documentation should include simple examples demonstrating how to paginate through data using the API. It should show how to retrieve the first page, navigate to the next page, and adjust pagination parameters.
 
 Documentation at the [X Developer Platform](https://developer.x.com/en/docs/twitter-api/pagination) shows simple examples on [pagination parameters](#Pagination-Parameters), [request structure](#Request-Structure), or [response structure](#Response-Structure). 
+
+[Stripe API documentation](https://docs.stripe.com/api/disputes) is another example 
 
 ### 2. Advanced Examples
 
