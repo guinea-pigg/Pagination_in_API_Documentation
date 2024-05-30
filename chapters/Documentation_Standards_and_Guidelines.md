@@ -20,7 +20,7 @@ It is worth noting that numerous API documentations have general introductions w
 
 Documentation has to provide an overview of pagination and its importance in retrieving large datasets efficiently.
 
-A chapter on pagination in API is available at the [X Developer Platform](https://developer.x.com/en/docs/twitter-api/pagination). The chapter includes:
+A chapter on pagination in API is available at the [X Developer Platform](https://developer.x.com/en/docs/twitter-api/pagination){:target="_blank"}. The chapter includes:
 - use cases for pagination,
 - pagination token definitions,
 - fundamentals of pagination,
