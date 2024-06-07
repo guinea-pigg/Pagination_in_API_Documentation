@@ -42,7 +42,7 @@ An example of an API request to get offset-based paginated response:
 | Allows for precise navigation | Not suitable for real-time or frequently updated datasets. Potential for inconsistent results if data changes during pagination |
 | Supports random access to pages |                     |
 
-[Twitter API documentation](https://developer.twitter.com/en/docs/twitter-api/pagination) presents offset-based pagination.
+[Twitter API documentation](https://developer.twitter.com/en/docs/twitter-api/pagination){:target="_blank"} presents offset-based pagination.
 
 ## Cursor-Based Pagination <a id="Cursor-Based-Pagination"></a>
 
@@ -74,7 +74,7 @@ In this example:
 | Suitable for real-time or frequently updated datasets.  Supports stable pagination across data changes | Cursor values may become invalid if underlying data changes |
 |  | Limited support in some database systems                  |
 
-[GitHub REST API documentation](https://docs.github.com/en/rest?apiVersion=2022-11-28) presents cursor-based pagination.
+[GitHub REST API documentation](https://docs.github.com/en/rest?apiVersion=2022-11-28){:target="_blank"} presents cursor-based pagination.
 
 ## Keyset-Based Pagination <a id="Keyset-Based-Pagination"></a>
 
@@ -107,7 +107,7 @@ As the result, the API would return a page of users starting after the user with
 | Well-suited for datasets with natural ordering   | Not suitable for unordered datasets                    |
 | Stable pagination across data changes | Limited support in some database systems              |
 
-[Stripe API Reference documentation](https://docs.stripe.com/api) presents keyset-based pagination.
+[Stripe API Reference documentation](https://docs.stripe.com/api){:target="_blank"} presents keyset-based pagination.
 
 ## Page-Based Pagination <a id="Page-Based-Pagination"></a>
 
@@ -133,5 +133,5 @@ In this example:
 | Facilitates easy navigation through pages | May lead to inconsistent results if data changes           |
 |       | Potential for increased server load due to large page sizes |
 
-[GitHub REST API documentation](https://docs.github.com/en/rest?apiVersion=2022-11-28) presents page-based pagination.
+[GitHub REST API documentation](https://docs.github.com/en/rest?apiVersion=2022-11-28){:target="_blank"} presents page-based pagination.
 
