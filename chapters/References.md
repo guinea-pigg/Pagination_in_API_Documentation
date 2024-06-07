@@ -8,7 +8,7 @@ nav_order: 7
 
 List of resources:
 
-1. [Swagger. Artiles on API documentation](https://swagger.io/resources/articles/)
+1. [Swagger. Artiles on API documentation](https://swagger.io/resources/articles/){:target="_blank"}
 
 2. [Blog "I'd rather be writing": Trends to follow or forget. API documentation](https://idratherbewriting.com/trends/trends-to-follow-or-forget-api-documentation.html#what-is-api-documentation)
 
