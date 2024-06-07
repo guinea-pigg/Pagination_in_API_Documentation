@@ -35,7 +35,7 @@ Documentation should describe the pagination parameters supported by the API. De
    - `limit`: specifying the maximum number of items per page,
    - additionally: any other parameters specific to the pagination style used, such as cursor values or keyset identifiers.
 
-An example showing this practice is documentation at the [X Developer Platform](https://developer.x.com/en/docs/twitter-api/pagination). It lists different parameters that facilitate the use of pagination in the documentation, such as: `next_token`, `previous_token`, `max_results`, `pagination_token`. In X's API `pagination_token` is a different name for `offset`, making it a typical example of offset-based API. 
+An example showing this practice is documentation at the [X Developer Platform](https://developer.x.com/en/docs/twitter-api/pagination){:target="_blank"}. It lists different parameters that facilitate the use of pagination in the documentation, such as: `next_token`, `previous_token`, `max_results`, `pagination_token`. In X's API `pagination_token` is a different name for `offset`, making it a typical example of offset-based API. 
 
 To know more about offset-based API, go to chapter titled [Pagination Styles and Patterns](Pagination_Styles_and_Patterns).
 <a id="Request-Structure"></a>
@@ -46,7 +46,7 @@ Documentation should clearly outline the structure of the API request when pagin
    - the number of records to be returned per page (page size),
    - any additional filters or sorting options that can be applied to the request.
 
-Documentation at the [X Developer Platform](https://developer.x.com/en/docs/twitter-api/pagination) shows an exemplary request and the sequence of further requests that retrieves the next pages of data. 
+Documentation at the [X Developer Platform](https://developer.x.com/en/docs/twitter-api/pagination){:target="_blank"} shows an exemplary request and the sequence of further requests that retrieves the next pages of data. 
 
 The initial request specifies a user ID (`2244994945`) and the time period for obtaining the results, from January 1, 2019, at 17:00:00 UTC to December 12, 2019, at 00:00:00 UTC.
 
@@ -69,7 +69,7 @@ Documentation should describe the structure of the API response when paginating 
    - links or cursors for navigating to the next or previous pages,
    - representation of the current page of data.
 
-Documentation at the [X Developer Platform](https://developer.x.com/en/docs/twitter-api/pagination) shows an exemplary response:
+Documentation at the [X Developer Platform](https://developer.x.com/en/docs/twitter-api/pagination){:target="_blank"} shows an exemplary response:
 
 `{
   "data": [
@@ -110,7 +110,7 @@ A part of the response called `meta` provides extra information about the data:
 
 ### 5. Error Handling
 
-Documentation can list any potential errors or edge cases related to pagination, such as invalid pagination parameters or reaching the end of the dataset. In practice, chapters dedicated to pagination in APIs rarely cover error handling specific to pagination. This topic is usually addressed in general troubleshooting sections, like in [Stripe API documentation](https://docs.stripe.com/api/errors/handling).
+Documentation can list any potential errors or edge cases related to pagination, such as invalid pagination parameters or reaching the end of the dataset. In practice, chapters dedicated to pagination in APIs rarely cover error handling specific to pagination. This topic is usually addressed in general troubleshooting sections, like in [Stripe API documentation](https://docs.stripe.com/api/errors/handling){:target="_blank"}.
 
 <a id="Providing-Usage-Examples"></a>
 ## Providing Usage Examples
@@ -119,21 +119,21 @@ Documentation can list any potential errors or edge cases related to pagination,
 
 The documentation should include simple examples demonstrating how to paginate through data using the API. It should show how to retrieve the first page, navigate to the next page, and adjust pagination parameters.
 
-Documentation at the [X Developer Platform](https://developer.x.com/en/docs/twitter-api/pagination) shows simple examples on [pagination parameters](#Pagination-Parameters), [request structure](#Request-Structure), or [response structure](#Response-Structure). 
+Documentation at the [X Developer Platform](https://developer.x.com/en/docs/twitter-api/pagination){:target="_blank"} shows simple examples on [pagination parameters](#Pagination-Parameters), [request structure](#Request-Structure), or [response structure](#Response-Structure). 
 
-[Stripe API documentation](https://docs.stripe.com/api/pagination) is another source that provides users with basic examples of possibilities given in the API, i.e. how to list charges, invoices or customers. 
+[Stripe API documentation](https://docs.stripe.com/api/pagination){:target="_blank"} is another source that provides users with basic examples of possibilities given in the API, i.e. how to list charges, invoices or customers. 
 
 ### 2. Advanced Examples
 
 The documentation should show more complex examples that explain different pagination scenarios, such as sorting, filtering, or combining pagination with other query parameters.
 
-Documentation on [YouTube API](https://developers.google.com/youtube/v3/guides/implementation/pagination?hl=en) shows how to retrieve additional sets of results for YouTube Data API queries, explaining additional parameters (e.g. `nextPageToken`, `prevPageToken`), and giving exemplary queries.
+Documentation on [YouTube API](https://developers.google.com/youtube/v3/guides/implementation/pagination?hl=en){:target="_blank"} shows how to retrieve additional sets of results for YouTube Data API queries, explaining additional parameters (e.g. `nextPageToken`, `prevPageToken`), and giving exemplary queries.
 
 ### 3. Sample Code Snippets
 
 The documentation should show code snippets in various programming languages illustrating how to integrate pagination into API requests. It should also include comments to explain each step and highlight key pagination parameters. 
 
-In practice, code snippets are often included in a general chapter on API usage rather than in a chapter dedicated solely to pagination. For example, this approach is used in the [YouTube API](https://developers.google.com/youtube/v3/code_samples/code_snippets) documentation.
+In practice, code snippets are often included in a general chapter on API usage rather than in a chapter dedicated solely to pagination. For example, this approach is used in the [YouTube API](https://developers.google.com/youtube/v3/code_samples/code_snippets){:target="_blank"} documentation.
 
 <a id="Writing-Clear-Pagination-Instructions"></a>
 ## Writing Clear Pagination Instructions
@@ -142,16 +142,16 @@ In practice, code snippets are often included in a general chapter on API usage 
 
 Documentation should explain how users should format API requests to paginate data effectively. It should provide examples of valid pagination requests using the supported parameters.
 
-[Stripe API](https://docs.stripe.com/api/pagination) documentation explains how to use [cursor-based pagination](Pagination_Styles_and_Patterns) with specific parameters (`starting_after` and `ending_before`). It also provides a sample response in a window next to the explanation.
+[Stripe API](https://docs.stripe.com/api/pagination){:target="_blank"} documentation explains how to use [cursor-based pagination](Pagination_Styles_and_Patterns) with specific parameters (`starting_after` and `ending_before`). It also provides a sample response in a window next to the explanation.
 
 ### 2. Clarify Default Behavior
 
-If the API has default pagination settings or behaviors, documentation should explain them explicitly, like in [Stripe API](https://docs.stripe.com/api/pagination) documentation ([cursor-based pagination](Pagination_Styles_and_Patterns)) or [X Developer Platform](https://developer.x.com/en/docs/twitter-api/pagination) documentation ([offset-based pagination](Pagination_Styles_and_Patterns)).
+If the API has default pagination settings or behaviors, documentation should explain them explicitly, like in [Stripe API](https://docs.stripe.com/api/pagination) documentation ([cursor-based pagination](Pagination_Styles_and_Patterns)) or [X Developer Platform](https://developer.x.com/en/docs/twitter-api/pagination){:target="_blank"} documentation ([offset-based pagination](Pagination_Styles_and_Patterns)).
 
 ### 3. Address Edge Cases
 
 The documentation should anticipate common questions or confusion points related to pagination, such as navigating to specific pages or handling large datasets.
 
-Such instructions are provided in [Google Books API documentation](https://developers.google.com/books/docs/v1/using):  
+Such instructions are provided in [Google Books API documentation](https://developers.google.com/books/docs/v1/using){:target="_blank"}:  
 
 "To navigate to a specific page, include the `startIndex` parameter in your request. If the specified index exceeds the total number of items, the API will return an empty list."
